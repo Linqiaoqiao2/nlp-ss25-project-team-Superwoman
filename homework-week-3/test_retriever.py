@@ -1,10 +1,9 @@
 from retriever import Retriever
 
 # Set file path and query list here
-file_path = "homework-week-3/docs/document1.txt"
+file_path = "homework-week-3/docs/Rotkaeppchen.pdf"
 queries = [
-    "What is the main idea of the text?",
-    "Who is the main character?"
+    "Wie endet das Märchen? Wer rettet Rotkäppchen und ihre Großmutter?"
 ]
 
 def run(file_path, queries, chunk_size=100, chunk_overlap=20, top_k=3):
