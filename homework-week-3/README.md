@@ -3,9 +3,9 @@
 This project builds on the semantic retrieval demo we created last week, where we experimented with sentence embeddings and FAISS using a small set of example sentences.
 
 
-## What¡¯s Improved Since Last Week
+## What's Improved Since Last Week
 
-This version turns that early experiment into a more complete and reusable retrieval system. Compared to last week, we¡¯ve made several key improvements:
+This version turns that early experiment into a more complete and reusable retrieval system. Compared to last week, we've made several key improvements:
 
 - We now support **real documents**, including `.txt`, `.md`, and `.pdf` files
 - Instead of working with fixed sentences, we **automatically split documents into chunks** with overlap to preserve context
@@ -15,7 +15,7 @@ This version turns that early experiment into a more complete and reusable retri
 - A basic **test script** and a structured project layout were added
 - This `README.md` explains how everything works and how to use it
 
-While last week¡¯s work helped us understand the basics of embeddings and vector search, this week¡¯s version is more practical and modular¡ªsomething we can reuse or build on in future projects.
+While last week's work helped us understand the basics of embeddings and vector search, this week's version is more practical and modular-something we can reuse or build on in future projects.
 
 
 ## How Vector Search Works
@@ -55,3 +55,6 @@ for res in results:
 r.save("my_index")   # Save to disk
 r.load("my_index")   # Load from disk
 
+##  Usage Instructions
+
+We tested our system using both English and German documents. Currently, it only supports querying English documents in English and German documents in German. In the future, we could build on this foundation to enable cross-lingual retrieval.
