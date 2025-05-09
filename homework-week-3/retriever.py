@@ -27,7 +27,7 @@ class Retriever:
     For .txt and .md, reads the file directly.
     Raises ValueError for unsupported file formats.
     """
-    def load_document(self, file_path: str) -> str:
+    def _load_document(self, file_path: str) -> str:
         
         suffix = Path(file_path).suffix.lower()
         if suffix in (".txt", ".md"):
@@ -40,7 +40,7 @@ class Retriever:
     
 
     #Split text into overlapping chunks.
-    def chunk_text(self, text: str) -> List[str]:
+    def _chunk_text(self, text: str) -> List[str]:
         
         tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
         tokens = tokenizer.tokenize(text)
@@ -57,8 +57,8 @@ class Retriever:
         
         all_chunks = []
         for path in file_paths:
-            raw_text = self.load_document(path)
-            chunks = self.chunk_text(raw_text)
+            raw_text = self._load_document(path)
+            chunks = self._chunk_text(raw_text)
             all_chunks.extend(chunks)
 
         self.documents = all_chunks
