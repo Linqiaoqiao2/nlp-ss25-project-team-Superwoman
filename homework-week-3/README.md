@@ -55,6 +55,6 @@ for res in results:
 r.save("my_index")   # Save to disk
 r.load("my_index")   # Load from disk
 
-##  Usage Instructions
+##  Reflections and Thoughts
 
 We tested our system using both English and German documents. Currently, it only supports querying English documents in English and German documents in German. In the future, we could build on this foundation to enable cross-lingual retrieval.
