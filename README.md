@@ -1,5 +1,5 @@
 ```markdown
-# RAG Project ¨C Summer Semester 2025
+# RAG Project ï¿½C Summer Semester 2025
 
 > **Retrieval-Augmented Generation** baseline implementation and roadmap for ongoing development.
 
