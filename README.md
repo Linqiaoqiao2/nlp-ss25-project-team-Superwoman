@@ -1,5 +1,5 @@
 ```markdown
-# RAG Project �C Summer Semester 2025
+# RAG Project Summer Semester 2025
 
 > **Retrieval-Augmented Generation** baseline implementation and roadmap for ongoing development.
 
@@ -86,7 +86,7 @@ We tested our system using both English and German documents. Currently, it only
 ---
 
 
-## ? Team Members
+## Team Members
 
 | Role        | Name             | GitHub Username      |
 |-------------|------------------|----------------------|
