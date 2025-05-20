@@ -1,5 +1,5 @@
 ````markdown
-# RAG Project – Summer Semester 2025
+# RAG Project - Summer Semester 2025
 
 > **Retrieval-Augmented Generation** baseline implementation and roadmap for ongoing development.
 
@@ -92,25 +92,6 @@ EOF
 
 We tested our system using both English and German documents. Currently, it only supports querying English documents in English and German documents in German. In the future, we could build on this foundation to enable cross-lingual retrieval.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 ## Team Members
@@ -122,5 +103,6 @@ We tested our system using both English and German documents. Currently, it only
 | Member | Subhasri Suresh | \[subhasri-suresh] |
 
 ```
-```
 
+> **Reminder:** After pasting this into your `README.md`, make sure to save the file with **UTF-8 encoding** (no BOM). This will ensure GitHub renders it correctly.
+```
