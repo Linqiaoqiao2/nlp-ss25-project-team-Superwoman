@@ -5,7 +5,7 @@
 
 ---
 
-## ? Overview
+## Overview
 
 This repository hosts the code for a semester-long project on building and experimenting with Retrieval-Augmented Generation (RAG) systems. Currently under active development.
 
