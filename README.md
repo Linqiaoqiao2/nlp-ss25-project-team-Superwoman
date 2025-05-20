@@ -1,4 +1,3 @@
-````markdown
 # RAG Project - Summer Semester 2025
 
 > **Retrieval-Augmented Generation** baseline implementation and roadmap for ongoing development.
@@ -15,39 +14,39 @@ This repository hosts the code for a semester-long project on building and exper
 
 The `Retriever` class in `retriever.py` provides end-to-end semantic search over text and PDF documents:
 
-1. **Load documents** (`.txt`, `.md`, `.pdf`)  
-2. **Chunk text** into overlapping token windows  
-3. **Embed chunks** with a SentenceTransformer  
-4. **Index embeddings** in FAISS for fast similarity search  
-5. **Query** the index to return top-K relevant chunks  
-6. **Save** / **Load** the index and chunk metadata to/from disk  
+1. **Load documents** (`.txt`, `.md`, `.pdf`)
+2. **Chunk text** into overlapping token windows
+3. **Embed chunks** with a SentenceTransformer
+4. **Index embeddings** in FAISS for fast similarity search
+5. **Query** the index to return top-K relevant chunks
+6. **Save** / **Load** the index and chunk metadata to/from disk
 
 ### Key Features
 
-- **Multi-format support**: `.txt`, `.md`, `.pdf`  
-- **Configurable chunking**: adjustable `chunk_size` and `chunk_overlap` parameters  
-- **Custom embeddings**: plug in any SentenceTransformer model  
-- **Fast similarity search**: powered by FAISS `IndexFlatL2`  
+* **Multi-format support**: `.txt`, `.md`, `.pdf`
+* **Configurable chunking**: adjustable `chunk_size` and `chunk_overlap` parameters
+* **Custom embeddings**: plug in any SentenceTransformer model
+* **Fast similarity search**: powered by FAISS `IndexFlatL2`
 
 ### Implementation Details
 
 #### Document Loading
 
-- **`.txt` / `.md`**: UTF-8 text reading  
-- **`.pdf`**: page-by-page text extraction via [PyMuPDF](https://pymupdf.readthedocs.io/)  
+* **`.txt` / `.md`**: UTF-8 text reading
+* **`.pdf`**: page-by-page text extraction via [PyMuPDF](https://pymupdf.readthedocs.io/)
 
 #### Chunking Strategy
 
-- **Tokenization**: using `AutoTokenizer` (WordPiece)  
-- **Sliding window**: generate overlapping chunks to preserve context  
+* **Tokenization**: using `AutoTokenizer` (WordPiece)
+* **Sliding window**: generate overlapping chunks to preserve context
 
 #### Embeddings
 
-- **Batch encoding**: use `SentenceTransformer.encode` to convert chunks into vector embeddings  
+* **Batch encoding**: use `SentenceTransformer.encode` to convert chunks into vector embeddings
 
 #### Indexing
 
-- **FAISS**: use `IndexFlatL2` for L2-distance based nearest neighbor search  
+* **FAISS**: use `IndexFlatL2` for L2-distance based nearest neighbor search
 
 ---
 
@@ -84,7 +83,7 @@ python - <<EOF
 r.save("my_index")   # Save to disk
 r.load("my_index")   # Load from disk
 EOF
-````
+```
 
 ---
 
@@ -96,13 +95,11 @@ We tested our system using both English and German documents. Currently, it only
 
 ## Team Members
 
-| Role   | Name            | GitHub Username    |
-| ------ | --------------- | ------------------ |
-| Member | Mengmeng Yu     | \[Linqiaoqiao2]    |
-| Member | Wenhui Deng     | \[deng-wenhui]     |
-| Member | Subhasri Suresh | \[subhasri-suresh] |
+| Role   | Name            | GitHub Username |
+| ------ | --------------- | --------------- |
+| Member | Mengmeng Yu     | Linqiaoqiao2    |
+| Member | Wenhui Deng     | deng-wenhui     |
+| Member | Subhasri Suresh | subhasri-suresh |
 
-```
+---
 
-> **Reminder:** After pasting this into your `README.md`, make sure to save the file with **UTF-8 encoding** (no BOM). This will ensure GitHub renders it correctly.
-```
