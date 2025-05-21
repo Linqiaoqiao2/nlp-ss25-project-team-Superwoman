@@ -1,6 +1,6 @@
 from typing import List
 from langchain_community.llms import LlamaCpp
-from langchain_core.callbacks import CallbackManager, StreamingStdOutCallbackHandler
+from langchain_core.callbacks import StreamingStdOutCallbackHandler
 
 class Generator:
     """
@@ -13,7 +13,7 @@ class Generator:
             n_batch=512,
             n_ctx=2048,
             f16_kv=True,
-            callback_manager=CallbackManager([StreamingStdOutCallbackHandler()]),
+            callbacks=[StreamingStdOutCallbackHandler()],
             verbose=False,
         )
 
@@ -21,4 +21,4 @@ class Generator:
        
         context = "\n".join(context_chunks)
         prompt = prompt_template.format(context=context, query=query)
-        return self.llm(prompt)
+        return self.llm.invoke(prompt)
