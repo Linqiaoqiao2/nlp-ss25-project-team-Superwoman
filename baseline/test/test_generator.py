@@ -1,46 +1,54 @@
 import unittest
-import tempfile
-import sys
 import os
+import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
+from pipeline import RAGPipeline
 
-from retriever.retriever import Retriever
-from generator.generator import Generator
-from util.fileUtil import FileUtil
+class TestGenerator(unittest.TestCase):
 
-class TestRAGPipeline(unittest.TestCase):
-
-    def setUp(self):
-        # Load the sample file
+    @classmethod
+    def setUpClass(self):
         current_dir = os.path.dirname(__file__)
-        self.document_path = os.path.join(current_dir, "../data/darwins_theory.txt")
-
-        with open(self.document_path, 'r') as f:
-            text_content = f.read()
-
-
-        # Initialize retriever and add the test file
-        self.retriever = Retriever()
-        self.retriever.add_documents([self.document_path])
-
-        # Load the llm from the folder llms
-        model_path = FileUtil.get_model_filePath()
-        print(f"filePath: {model_path}")
-        self.generator = Generator(filePath=model_path) 
-
-        self.prompt_template = (
-            "Context:\n{context}\n\n"
-            "Question:\n{query}\n\n"
-            "Answer:"
+        document_path = os.path.join(current_dir, "../data/darwins_theory.txt")
+        self.pipeline = RAGPipeline(
+            document_paths=[document_path],
+            prompt_template=(
+                "Context:\n{context}\n\n"
+                "Question:\n{query}\n\n"
+                "Answer:"
+            )
         )
+        self.output_file = os.path.join(os.path.dirname(__file__), "outputs", "answers.txt")
 
-    def test_generation(self):
+        # Overwrite (clear) file at the start of test suite
+        with open(self.output_file, "w") as f:
+            f.write("=== Summarization Test Output ===\n\n")
+    
+    def writeOutput(self, query, answer):
+        # os.makedirs(os.path.dirname(output_file), exist_ok=True)  # Create folder if needed
+        with open(self.output_file, "a") as f:  # Append mode to keep adding answers
+            f.write(f"Query: {query}\n")
+            f.write(f"Answer: {answer}\n")
+            f.write("-" * 40 + "\n")  
+
+
+    def test_askQuestions(self):
         query = "What was Darwin's contribution?"
-        top_chunks = self.retriever.query(query, top_k=2)
-        answer = self.generator.generate_answer(query, top_chunks, self.prompt_template)
-        print("\nGenerated Answer:\n", answer)
+        answer = self.pipeline.run(query)
+        self.writeOutput(query, answer)
+        self.assertIsInstance(answer, str)
 
+    def test_documentSumarization(self):
+        query = "Summarize the given details in a single sentence"
+        answer = self.pipeline.run(query)
+        self.writeOutput(query, answer)
+        self.assertIsInstance(answer, str)
+
+    def test_getImportantPoints(self):
+        query = "Give an important point about darvins theory."
+        answer = self.pipeline.run(query)
+        self.writeOutput(query, answer)
         self.assertIsInstance(answer, str)
 
 if __name__ == "__main__":
