@@ -87,11 +87,70 @@ EOF
 
 ---
 
+## Generator Module
+
+The `Generator` class in `generator.py` utilizes a local LlamaCpp model for generating answers based on retrieved context, which is useful for question-answering systems.
+
+1. **Load llm model**  from a given file path
+2. **Generate answers** by combining a user query with relevant context chunks using a customizable prompt template
+3. **Handle errors** to manage issues during model loading
+
+## Dependencies
+
+1. **LlamaCpp**: The library used for loading and interacting with the LlamaCpp model.
+2. **os**: Standard library for file path operations.
+3. **sys**: The model used to manipulate the Python runtime environment, access command-line arguments, and handle standard input/output streams.
+4. **List**: In the generate_answer method, List[str] specifies that the context_chunks parameter should be a list of strings.
+5. **StreamingStdOutCallbackHandler**: It handles streaming output from the LlamaCpp model, allowing the generated text to be printed to standard output in real-time as it is produced.
+
+## Usage Instructions
+
+```bash
+
+# 1. Provide the file path to the LlamaCpp model
+python - <<EOF
+            self.llm = LlamaCpp(
+                model_path = filePath,
+                n_gpu_layers=0,
+                n_batch=64,
+                n_ctx=1024,
+                f16_kv=True,
+                callbacks=[StreamingStdOutCallbackHandler()],
+                verbose=False,
+            )
+EOF
+
+# 2. Generate answers with prompts
+python - <<EOF
+def generate_answer(self, query: str, context_chunks: List[str], prompt_template: str) -> str:
+        context = "\n".join(context_chunks)
+        prompt = prompt_template.format(context=context, query=query)
+        return self.llm.invoke(prompt)
+EOF
+
+# 3. Handle errors
+python - <<EOF
+def __init__(self, filePath):
+        try:
+            print(f"? Loading model from: {filePath}")
+            current_dir = os.path.dirname(__file__)
+        except Exception as e:
+            print(f"? Failed to load model: {e}")
+            raise
+EOF
+```
+
+---
+
 ## Reflections and Thoughts
 
 We tested our system using both English and German documents. Currently, it only supports querying English documents in English and German documents in German. In the future, we could build on this foundation to enable cross-lingual retrieval.
 
+We can validate input parameters for the Generator class to make sure the output from the model conforms to the expected results. For example, the text chunks should not be an empty list or the generated answers should be in the format of string.
+
+
 ---
+
 
 ## Team Members
 
