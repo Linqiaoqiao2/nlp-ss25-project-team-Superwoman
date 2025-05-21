@@ -57,14 +57,20 @@ class Retriever:
         
         all_chunks = []
         for path in file_paths:
+            print(f"filepath: {path}")
             raw_text = self.load_document(path)
             chunks = self.chunk_text(raw_text)
             all_chunks.extend(chunks)
+            print(f"Number of chunks: {len(all_chunks)}")
+
 
         self.documents = all_chunks
 
         # Create embeddings and build FAISS index
-        embeddings = self.model.encode(all_chunks, show_progress_bar=True)
+        embeddings = self.model.encode(all_chunks, show_progress_bar=True, convert_to_numpy=True)
+        print(type(embeddings))
+        print(f"Embeddings shape: {embeddings.shape}")
+        print(getattr(embeddings, 'shape', 'no shape'))
         dim = embeddings.shape[1]
         self.index = faiss.IndexFlatL2(dim)
         self.index.add(embeddings)
