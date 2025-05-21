@@ -12,7 +12,7 @@ class Retriever:
     Retriever class for document indexing and semantic search using FAISS and SentenceTransformers.
     """
     # Initialize Retriever with embedding model and chunk parameters, so they can be reused across methods.
-    def __init__(self, model_name: str = "all-MiniLM-L6-v2", chunk_size: int = 200, chunk_overlap: int = 30):
+    def __init__(self, model_name: str = "all-MiniLM-L6-v2", chunk_size: int = 300, chunk_overlap: int = 50):
         
         self.model = SentenceTransformer(model_name)
         self.chunk_size = chunk_size
@@ -41,14 +41,15 @@ class Retriever:
 
     #Split text into overlapping chunks.
     def chunk_text(self, text: str) -> List[str]:
-        
         tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
         tokens = tokenizer.tokenize(text)
+        input_ids = tokenizer.encode(text, add_special_tokens=False)
         chunks = []
         step = self.chunk_size - self.chunk_overlap
         for i in range(0, len(tokens), step):
-            chunk = tokens[i:i + self.chunk_size]
-            chunks.append(" ".join(chunk))
+            chunk_ids = input_ids[i:i + self.chunk_size]
+            chunk_text = tokenizer.decode(chunk_ids, skip_special_tokens=True)
+            chunks.append(chunk_text)
         return chunks
     
     # Add documents to the retriever.

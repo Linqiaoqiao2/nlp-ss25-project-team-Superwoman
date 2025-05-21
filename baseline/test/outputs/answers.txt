@@ -1,0 +1,13 @@
+=== Summarization Test Output ===
+
+Query: What was Darwin's contribution?
+Answer: 
+Charles Darwin contributed to the theory of evolution by proposing a natural, testable explanation for the diversity of living things. He also proposed that all species, both living and extinct, were related through shared ancestry. Darwin's theory is considered one of the most well-supported scientific theories in existence, providing a unifying explanation for the similarities and differences observed among organisms and their fossils.
+----------------------------------------
+Query: Summarize the given details in a single sentence
+Answer:  Charles Darwin's theory of evolution by natural selection, proposed in his groundbreaking work on the origin of species, revolutionized biology and transformed our view of life.
+----------------------------------------
+Query: Give an important point about darvins theory.
+Answer: 
+One of the most important points about Darwin's theory is that it provides a unifying explanation for the similarities and differences observed among organisms and their fossils.
+----------------------------------------
