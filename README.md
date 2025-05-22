@@ -7,6 +7,43 @@
 ## Overview
 
 This repository hosts the code for a semester-long project on building and experimenting with Retrieval-Augmented Generation (RAG) systems. Currently under active development.
+---
+
+## Folder Structure
+
+project-root/
+.
+├── data
+│   ├── Germany's foreign policy?.txt
+│   ├── Rotkaeppchen.pdf
+│   ├── ai_human.md
+│   └── darwins_theory.txt
+├── generator
+│   └── generator.py
+├── llms
+│   ├── README.MD
+│   └── ** your model goes here **
+├── logs
+│   └── retriever.log
+├── pipeline.py
+├── retriever
+│   └── retriever.py
+├── test
+│   ├── input
+|   |   └── questions.txt
+│   ├── outputs
+|   |   └── answers.txt
+│   ├── RAGPipelineTest.py
+│   └── test_retriever.py
+└── util
+    ├── fileUtil.py
+    └── logger_config.py
+
+
+
+To run the RAGPipeline, run: python test/RAGPipelineTest.py
+To test with new question, add your question to: test/input/questions.txt
+Output file: test/output/answers.txt
 
 ---
 

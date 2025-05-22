@@ -4,7 +4,7 @@ from generator.generator import Generator
 from util.fileUtil import FileUtil
 from util.logger_config import setup_logger
 
-logger = setup_logger("pipeline", log_file="logs/retriever.log")
+logger = setup_logger("pipeline", log_file="logs/RAGPipeline.log")
 
 
 class RAGPipeline:

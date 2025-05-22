@@ -2,7 +2,7 @@ import os
 from util.logger_config import setup_logger
 
 
-logger = setup_logger("FileUtil", log_file="logs/retriever.log")
+logger = setup_logger("FileUtil", log_file="logs/RAGPipeline.log")
 
 
 class FileUtil:
