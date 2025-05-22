@@ -26,7 +26,7 @@ class TestGenerator(unittest.TestCase):
             f.write("=== Summarization Test Output ===\n\n")
     
     def writeOutput(self, query, answer):
-        # os.makedirs(os.path.dirname(output_file), exist_ok=True)  # Create folder if needed
+        # os.makedirs(os.path.dirname(output_file), exist_ok=True) 
         with open(self.output_file, "a") as f:  # Append mode to keep adding answers
             f.write(f"Query: {query}\n")
             f.write(f"Answer: {answer}\n")
@@ -34,22 +34,13 @@ class TestGenerator(unittest.TestCase):
 
 
     def test_askQuestions(self):
-        query = "What was Darwin's contribution?"
-        answer = self.pipeline.run(query)
-        self.writeOutput(query, answer)
-        self.assertIsInstance(answer, str)
+        self.questions_file = os.path.join(os.path.dirname(__file__), "input", "questions.txt")
 
-    def test_documentSumarization(self):
-        query = "Summarize the given details in a single sentence"
-        answer = self.pipeline.run(query)
-        self.writeOutput(query, answer)
-        self.assertIsInstance(answer, str)
-
-    def test_getImportantPoints(self):
-        query = "Give an important point about darvins theory."
-        answer = self.pipeline.run(query)
-        self.writeOutput(query, answer)
-        self.assertIsInstance(answer, str)
+        with open(self.questions_file, "r", encoding="utf-8") as file:
+            for query in file:
+                answer = self.pipeline.run(query)
+                self.writeOutput(query, answer)
+                self.assertIsInstance(answer, str)
 
 if __name__ == "__main__":
     unittest.main()

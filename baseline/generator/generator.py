@@ -1,9 +1,12 @@
 import sys
 import os
+from util.logger_config import setup_logger
 
 from typing import List
 from langchain_community.llms import LlamaCpp
 from langchain_core.callbacks import StreamingStdOutCallbackHandler
+
+logger = setup_logger("Generator", log_file="logs/retriever.log")
 
 class Generator:
     """
@@ -11,7 +14,8 @@ class Generator:
     """
     def __init__(self, filePath):
         try:
-            print(f"? Loading model from: {filePath}")
+            logger.info(f"Loading model from: {filePath}")
+
             current_dir = os.path.dirname(__file__)
             self.llm = LlamaCpp(
                 # model_path = os.path.join(current_dir, "orca-mini-3b-gguf2-q4_0.gguf"),
@@ -24,7 +28,7 @@ class Generator:
                 verbose=False,
             )
         except Exception as e:
-            print(f"? Failed to load model: {e}")
+            logger.critical("Exception while calling init Generator: {e}")
             raise
 
     def generate_answer(self, query: str, context_chunks: List[str], prompt_template: str) -> str:
