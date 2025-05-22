@@ -1,4 +1,8 @@
 import os
+from util.logger_config import setup_logger
+
+
+logger = setup_logger("FileUtil", log_file="logs/retriever.log")
 
 
 class FileUtil:
@@ -16,10 +20,9 @@ class FileUtil:
 
         # Get the first file
         first_file = files[0]
-        print(f"First file: {first_file}")
-        model_file_path = os.path.join(directory_path, first_file)
-        print(f"model path file: {model_file_path}")
+        logger.info(f"Model Choosen: {first_file}")
 
+        model_file_path = os.path.join(directory_path, first_file)
         return model_file_path
 
     @staticmethod
