@@ -10,7 +10,7 @@ This repository hosts the code for a semester-long project on building and exper
 ---
 
 ## Folder Structure
-
+<pre> ```plaintext 
 project-root/
 .
 ├── data
@@ -45,6 +45,7 @@ To run the RAGPipeline, run: python test/RAGPipelineTest.py
 To test with new question, add your question to: test/input/questions.txt
 Output file: test/output/answers.txt
 
+``` </pre>
 ---
 
 ## Retriever Module
