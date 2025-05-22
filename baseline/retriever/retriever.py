@@ -9,7 +9,7 @@ from sentence_transformers import SentenceTransformer
 from typing import List
 from transformers import AutoTokenizer
 
-logger = setup_logger("Retriever", log_file="logs/retriever.log")
+logger = setup_logger("Retriever", log_file="logs/RAGPipeline.log")
 
 class Retriever:
     """

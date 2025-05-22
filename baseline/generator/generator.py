@@ -6,7 +6,7 @@ from typing import List
 from langchain_community.llms import LlamaCpp
 from langchain_core.callbacks import StreamingStdOutCallbackHandler
 
-logger = setup_logger("Generator", log_file="logs/retriever.log")
+logger = setup_logger("Generator", log_file="logs/RAGPipeline.log")
 
 class Generator:
     """
