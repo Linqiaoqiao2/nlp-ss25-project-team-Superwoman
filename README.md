@@ -44,7 +44,7 @@ project-root/
  1. **To run the RAGPipeline with test data/questions:** python test/RAGPipelineTest.py
  2. **To test with new question, add your question to:** test/input/questions.txt
  3. **Output file:** test/output/answers.txt
-
+ 4. **LLMS can be download from base on the use case and placed in the llms folder:**  https://raw.githubusercontent.com/nomic-ai/gpt4all/main/gpt4all-chat/metadata/models2.json
  
 ---
 
