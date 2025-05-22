@@ -41,7 +41,7 @@ project-root/
 
 
 </pre>
- 1. **To run the RAGPipeline, run** python test/RAGPipelineTest.py
+ 1. **To run the RAGPipeline with test data/questions:** python test/RAGPipelineTest.py
  2. **To test with new question, add your question to:** test/input/questions.txt
  3. **Output file:** test/output/answers.txt
 
