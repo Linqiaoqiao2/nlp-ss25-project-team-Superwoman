@@ -1,0 +1,618 @@
+
+
+
+
+
+
+
+
+
+
+FAQ - M. Sc. Angewandte Informatik 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+zur Hauptnavigation springen
+zum Inhaltsbereich springen
+Universität Bamberg
+
+						Suche öffnen
+					
+
+						Sie befinden sich hier:
+					
+Startseite
+Fakultäten
+Wirtschaftsinformatik und Angewandte Informatik
+Studium
+Studienangebot
+M. Sc. Angewandte Informatik
+FAQ
+
+                    www.uni-bamberg.de
+                    
+
+                    univis.uni-bamberg.de
+                    
+
+                    fis.uni-bamberg.de
+                    
+Suche starten
+Suche schließen
+  
+ Universität Bamberg
+
+                                    Kontrast
+                                
+Deutsch
+English
+Suche öffnen
+
+                    www.uni-bamberg.de
+                    
+
+                    univis.uni-bamberg.de
+                    
+
+                    fis.uni-bamberg.de
+                    
+Suche starten
+Suche schließen
+Fakultät Wirtschaftsinformatik und Angewandte Informatik
+M. Sc. Angewandte Informatik
+ 
+Otto-Friedrich-Universität Bamberg
+Fakultäten
+Wirtschaftsinformatik und Angewandte Informatik
+Studium
+Studienangebot
+M. Sc. Angewandte Informatik
+FAQ
+
+						Seitenbereich: 
+						
+Fakultät Wirtschaftsinformatik und Angewandte Informatik
+M. Sc. Angewandte Informatik
+
+                                Kontrast
+                            
+
+							Sprache
+						
+Deutsch
+English
+Profil des Studiengangs
+Qualifikationsziele
+Struktur und Inhalt
+Teilzeitstudium
+Bewerbung und Zugang
+Gute Gründe
+Berufsperspektiven
+Ordnungen und Dokumente
+Ansprechpersonen
+FAQ
+
+	        
+                Abschlussarbeiten (Bachelor-/Masterarbeit)
+	        
+	        
+Alle aufklappen
+						
+
+                                        Muss ich zum Zeitpunkt der Abgabe der Bachelor- oder Masterarbeit immatrikuliert sein?
+                                    
+Ja. Die Abschlussarbeit zählt zum Prüfungszeitraum des Semesters, in dem sie abgegeben wurde, unabhängig vom Zeitpunkt der mündlichen Prüfung und vom Abgabetermin im Anmeldeformular der Arbeit. Daher ist eine Immatrikulation auch nur bis zur tatsächlichen Abgabe der Arbeit (inkl. Kolloquium) erforderlich. Für die Anmeldung sowie die Abgabe der Abschlussarbeit darf man nicht beurlaubt sein. 
+
+                                        Ich schreibe gerade meine Abschlussarbeit. Muss ich mich noch für das kommende Semester bei der Studentenkanzlei zurückmelden, wenn ich mir nicht sicher sein kann, dass die Note noch im gleichen Semester vorliegt?
+                                    
+Entscheidend ist das Datum der tatsächlichen Abgabe der Abschlussarbeit beim Prüfungsamt. Für den Zeitraum der Korrektur müssen Sie nicht immatrikuliert sein.
+
+                                        Antrag für eine Abschlussarbeit aus einem anderen Fach 
+                                    
+Ihre Abschlussarbeit muss nicht zwangsläufig an einem Lehrstuhl des Kerngebietes Ihres Studiengangs geschrieben werden. 
+Bitte prüfen Sie zunächst die konkrete Regelung der StuFPO,  gemäß der Sie studieren! 
+Vielfach sind bereits mehrere mögliche Fachbereiche dort aufgeführt.
+Ist der Lehrstuhl, an dem Sie Ihre Abschlussarbeit schreiben möchten, nicht explizit in diesem Zusammenhang in Ihrer StuFPO (Anhang) genannt, ist ein Antrag an den Prüfungsausschuss notwendig. Mit diesem Antrag ist nachzuweisen, dass das gestellte Thema inhaltlichen Bezug zum aktuellen Studiengang aufweist.
+Für die Genehmigung müssten Sie ein Exposé zum Inhalt der Arbeit einreichen, aus dem hervorgeht, inwiefern in der Arbeit ein Bezug zum Kernfach Ihres Studiengangs (Informatik bzw. Angewandte Informatik) besteht. Dieser sollte inhaltlicher Natur sein und sich nicht nur auf erworbene Kenntnisse beziehen. Darüber hinaus müssten Sie dem Prüfungsausschussvorsitzenden den geplanten endgültigen Titel der Arbeit nennen, da dieser Bestandteil der Genehmigung ist und im Anschluss nicht mehr geändert werden kann.
+Ein Antrag ist selbstständig per Mail an den Prüfungsausschuss zu stellen. 
+
+	        
+                Anerkennung von Prüfungsleistungen
+	        
+	        
+Alle aufklappen
+						
+
+                                        Ich habe den Studiengang gewechselt. Wie kann ich mir die bisherigen Leistungen anerkennen lassen?
+                                    
+Sofern der Wechsel zwischen zwei Studiengängen innerhalb der Universität Bamberg stattfindet, senden Sie bitte das Notenblatt, welches Sie aus FlexNow2 generieren, an den Prüfungsausschuss Informatik und Angewandte Informatik. Ferner senden Sie einen Anerkennungsantrag (zu finden im 
+vc-Kurs
+ des Prüfungsausschusses) mit.
+Sofern Sie bisher an einer anderen Universität studiert haben, machen Sie bitte einen Termin mit dem Prüfungsausschuss aus. Weitere Informationen finden Sie unter 
+Anerkennung von Studienzeiten, Prüfungsleistungen und Studienleistungen
+.
+
+                                        Ich habe den Studiengang gewechselt. Wie funktioniert die Einstufung in das richtige Semester?
+                                    
+Eine Hochstufung um jeweils ein Fachsemester findet bei einer Anerkennung bzw. Anrechnung von >= 30 ECTS-Punkte statt. Die Hochstufung wird zusammen mit der Anerkennung durchgeführt. Ein gesonderter Antrag ist nicht notwendig. Bitte wenden Sie sich zu Fragen an den Prüfungsausschuss Informatik und Angewandte Informatik.
+
+                                        Ich habe den Studiengang gewechselt. Bis wann muss ich mir die bisherigen Leistungen anerkennen lassen?
+                                    
+Wir empfehlen die Anerkennung bereits erbrachter Studienleistungen, z.B. aus einem vorangegangenen Studium, zeitnah und zum Start des Studiums vorzunehmen. Wir möchten dadurch vermeiden, dass z.B. Anerkennungen nicht mehr möglich sind (siehe nächstes FAQ-Item) oder die Studienfortschrittskontrolle (Studien- und Fachprüfungsordnung §34 der Bachelorstudiengänge) das Studium in Bedrängnis bringt.
+
+                                        Gibt es Fristen für die Anerkennung von Studienleistungen?
+                                    
+Ein Antrag auf Anerkennung ist nicht mehr möglich, sobald die oder der Studierende sich in einem das entsprechende Modul betreffenden Prüfungsverhältnis mit der Hochschule befindet (bspw. nach erfolgter Anmeldung für eine Prüfung), bei der sie oder er um Anerkennung ersucht.
+
+ 
+
+                                        Anerkennung von Scheinleistungen
+                                    
+Grundsätzlich sollte die Einreichung von Scheinen nicht mehr nötig sein. Wenn Sie sich für eine Prüfung nicht regulär über FlexNow anmelden können, ist dies möglicherweise ein Zeichen dafür, dass Sie das Modul nicht in Ihren Studiengang einbringen können! In diesem Fall sollten Sie zunächst die Regelungen in Ihrer StuFPO prüfen und bei immer noch vorhandenem Zweifel beim Prüfungsausschuss nachfragen. Möglicherweise kann auch die reguläre Prüfungsanmeldung über FlexNow für Sie freigeschaltet werden.
+Sollte wirklich die Belegung der Modulprüfung "auf Schein" die einzige Möglichkeit sein, reichen Sie den Schein im Prüfungsausschuss zur Anerkennung ein. Ein eingereichter Schein ist jedoch - ohne vorherige Bestätigung durch den Prüfungsausschuss - keine Garantie dafür, dass das belegte Modul tatsächlich in den Studiengang eingebracht werden kann.
+
+	        
+                Auslandsstudium
+	        
+	        
+Alle aufklappen
+						
+
+                                        Ich werde demnächst an einer ausländischen Universität studieren. Welche Anerkennungsmöglichkeiten für Module gibt es?
+                                    
+Es gibt zwei Möglichkeiten der Anerkennung von an einer anderen Hochschule erbrachten Leistungen:
+1. Modulanerkennung: Sofern das angebotene Modul (bspw. „Artificial Intelligence“) keinen "wesentlichen Unterschied" zu einem konkreten Bamberger Modul (bspw. AI-KI-B) aufweist, kann es als das Bamberger Modul angerechnet werden. Hierfür müssen Sie den Modulanbieter des entsprechenden Bamberger Lehrstuhls (bspw. Smart Environments) bitten, die Anerkennbarkeit des erbrachten Moduls für das entsprechende Bamberger Modul zu bestätigen. Bestätigt dieser Ihnen, dass kein "wesentlicher Unterschied" der beiden Module vorliegt, kann das Bamberger Modul anstelle des erworbenen Moduls anerkannt werden. Dieses Vorgehen ist vor allem bei der Ersetzung von Bamberger Pflichtmodulen notwendig.
+2. Modulgruppenanerkennung: Das anzuerkennende Modul entspricht keinem Bamberger Modul so passgenau, dass eine Modulanerkennung sinnvoll ist. Es passt jedoch hinsichtlich der Inhalte und erworbenen Kompetenzen in eine vorgesehene Modulgruppe und kann ohne Gleichwertigkeit mit einem Bamberger Modul anerkannt werden. Dieses Vorgehen ist nur im Wahlpflichtbereich möglich. Module des Pflichtbereiches können nur durch eine Modulanerkennung ersetzt werden.
+ Konkrete Fragen zur Modulgruppenanerkennung beantwortet Ihnen gerne der Prüfungsausschuss.
+ Beachten Sie bitte, dass laut Studien- und Fachprüfungsordnung „die zu erbringenden Prüfungsleistungen vor Antritt des Auslandsaufenthaltes mit dem zuständigen Prüfungsausschuss vereinbart werden“ sollen.
+
+                                        Muss ich mich für ein Auslandsstudium beurlauben lassen?
+                                    
+Darauf gibt es keine generelle Antwort. Grundsätzlich besteht die Möglichkeit, sich für ein Auslandsstudium beurlauben zu lassen. Ein Urlaubssemester bedeutet, dass Ihre Fachsemesterzahl erstmal nicht steigt. Dennoch wird Ihnen bei Anerkennung Ihrer Leistungen nachträglich pro 30 ECTS-Punkte, welche Ihnen aus dem Auslandsstudium anerkannt werden, ein Fachsemester hinzugezählt.
+Wenn Sie beurlaubt sind, können Sie an der Universität Bamberg nur an Wiederholungsprüfungen teilnehmen. Bei weiteren Fragen wenden Sie sich bitte direkt an die Studierendenkanzlei, die für Beurlaubungen zuständig ist. 
+
+                                        Was ist ein Learning Agreement?
+                                    
+In einem Learning Agreement bestätigen wir Ihnen, welche der von Ihnen gewählten ausländischen Kurse in Ihrem Studiengang in Bamberg anerkannt werden können. Das Formular dazu finden Sie im 
+VC-Kurs des Prüfungsausschusses
+.
+Darüber hinaus gibt es ein Erasmus Learning Agreement, welches häufig vom AAA  (Akademisches Auslandsamt) unterschrieben wird. 
+Dieses hat für die Anerkennung von Modulen seitens des Prüfungsausschusses keine Verbindlichkeit.
+
+                                        Brauche ich ein Learning Agreement?
+                                    
+Das Learning Agreement dient Ihrer eigenen Planungssicherheit: Wenn Sie sich Kurse, die Sie im Ausland erbracht haben oder erbringen werden, in Ihrem Studium anrechnen lassen möchten, müssen diese durch den Prüfungsausschuss genehmigt werden. Geschieht dies im Vorfeld des Auslandsstudiums, vereinbaren wir ein Learning Agreement. Haben Sie kein Learning Agreement vereinbart und die Prüfung der ausländischen Kurse erfolgt somit erst nach dem Auslandsaufenthalt, so kann es passieren, dass Sie erst jetzt erfahren, dass nicht alle von Ihnen gewählten Kurse angerechnet werden können.
+
+                                        Mit wem schließe ich das Learning Agreement ab und was brauche ich dazu?
+                                    
+Grundsätzlich werden für ein Learning Agreement Modulbeschreibungen der ausländischen Module benötigt.
+
+Möchten Sie ein Bamberger Modul durch ein ausländischen Modul ersetzen, schließen Sie das Learning Agreement mit dem Fachvertreter ab.
+
+Möchten Sie ausländische Module in Wahlpflichtbereichen einbringen, so schließen Sie das Learning Agreement direkt mit dem Prüfungsausschuss ab. Wenden Sie sich dafür an den Prüfungsausschuss.   
+
+Formulare sowohl für die Modulanrechnung als auch für die Modulgruppenanrechnung finden Sie im 
+vc-Kurs des Prüfungsausschusses
+.
+
+                                        Kann ich ein Learning Agreement abändern?
+                                    
+Sollte sich etwas an Ihrer Kurswahl an der ausländischen Universität ändern (z.B., weil geplante Module nicht zur Verfügung stehen), so kontaktieren Sie bitte den Prüfungsausschuss. Über zusätzliche Module oder Änderungen an bestehenden Modulen kann dann auch per E-Mail ein Learning Agreement ausgestellt werden.
+
+                                        Ich habe kein Learning Agreement abgeschlossen. Kann ich mir trotzdem Kurse aus dem Ausland anerkennen lassen?
+                                    
+Ja, sofern die ausländischen Module fachlich passend sind. Wenden Sie sich dann mit Modulbeschreibungen und dem ausländischen Zeugnis an den Prüfungsausschuss Informatik / Angewandte Informatik. Sinnvoller und für Sie persönlich planungssicherer ist es jedoch, diese Absprachen per Learning Agreement im Vorhinein zu treffen.
+
+                                        Wie erfolgt die Anerkennung der ausländischen Module und die Notenumrechnung?
+                                    
+Nach Ihrem Auslandsstudium reichen Sie bitte das Zeugnis, das Learning Agreement (bzw., falls nicht getroffen, aussagekräftige Modulbeschreibungen) sowie den ausgefüllten Antrag auf Anerkennung beim Prüfungsausschuss Informatik/ Angewandte Informatik ein. Die Formulare finden Sie im 
+VC-Kurs
+.
+Bei einer Modulgruppenanerkennung werden die ECTS-Punkte anerkannt, die Sie im Ausland dafür erhalten haben. Bei einer Modulanerkennung werden die ECTS-Punkte des Bamberger Moduls verbucht. Siehe auch 
+Anerkennung von Prüfungsleistungen.
+In einigen Fällen gibt es Empfehlungen zur Notenumrechnung, welche von der Partneruniversität herausgegeben werden. Sofern dies der Fall ist, fügen Sie diese Umrechnungsempfehlung dem Anrechnungsantrag bei. Sofern die Umrechnungsempfehlungen von uns anerkannt werden, werden wir diese berücksichtigen. Sollte es keine Umrechnungsempfehlungen geben, wird die offizielle „bayerische Formel" verwendet.
+
+	        
+                Auswahl von Modulen
+	        
+	        
+Alle aufklappen
+						
+
+                                        Ich habe in einem Wahlpflichtbereich bereits alle ECTS-Punkte erbracht. Dennoch möchte ich zur Notenverbesserung noch ein weiteres Modul belegen. Ist das möglich?
+                                    
+Sie können zusätzliche Module im freiwilligen Zusatzbereich belegen. Nachdem Sie die Prüfung absolviert haben und die Note feststeht, können Sie den Tausch des Moduls aus dem freiwilligen Zusatzbereich mit einem Modul aus einem Wahlpflichtbereich beim Prüfungsamt per E-Mail veranlassen. 
+
+Beachten Sie bitte, dass ein Tausch nicht mehr möglich ist, wenn Sie bereits alle ECTS-Punkte für Ihr Studium erbracht haben, da in diesem Fall das Studium bereits abgeschlossen ist.
+
+                                        Welche Sprachkurse (Fremdsprachen) lassen sich in meinem Studiengang anrechnen?
+                                    
+Für die Bachelorstudiengänge AI und Inf: SoSySc sowie den Masterstudiengang CitH:
+Wählbar sind Module gemäß dem Angebot des Sprachenzentrums Bamberg (
+Modulhandbuch des Sprachenzentrums
+), ausgenommen die Module der Bereiche Deutsch als Fremdsprache und Wirtschaftsdeutsch. Empfohlen werden die Sprachkurse 
+IT English
+.
+Für den Masterstudiengang ISoSySc:
+Wählbar sind Module gemäß dem Angebot des Sprachenzentrums Bamberg (
+Modulhandbuch des Sprachenzentrums
+). Ausgenommen ist für ISoSySc die Einbringung von Englisch-Modulen sowie die Einbringung von Modulen der Sprache, in der die Hochschulzugangsberechtigung erworben wurde.
+Allgemeines:
+Im Masterstudiengang AI ist keine Einbringung von Sprachmodulen möglich.
+Die Einbringung von Sprachmodulen soll nicht mehr über Scheine abgewickelt werden! 
+Bitte schreiben Sie stattdessen dem Prüfungsausschuss, welches Modul Sie belegen möchten. Die Anmeldung wird dann im FlexNow für Sie freigeschaltet.
+Beachten Sie
+, dass für die Wirtschaftsfremdsprachen jeweils 
+beide 
+Teilmodulprüfungen erfolgreich bestanden werden müssen, damit die 6 ECTS-Punkte angerechnet werden können. Z.B. Für Wirtschaftsenglisch (arabisch) 1 muss Wirtschaftsenglisch (römisch) I und Wirtschaftsenglisch (römisch) III erfolgreich belegt werden. 
+
+                                        Welche Module kann ich im freiwilligen Zusatzbereich wählen?
+                                    
+Wollen Sie weitere Module an der Universität Bamberg belegen, so können Sie sich zu den Prüfungen in diesen Modulen im freiwilligen Zusatzbereich anmelden. Am Ende Ihres Studiums kann darüber ein Zusatzzeugnis ausgestellt werden.
+Anerkannte Leistungen anderer Hochschulen, z.B. aus dem Vorstudium oder dem Auslandsaufenthalt, können 
+nicht 
+unter den freiwilligen Zusatzleistungen anerkannt werden.
+
+                                        Welches Modulhandbuch ist gültig?
+                                    
+Es ist immer jeweils 
+nur 
+das 
+aktuellste 
+Modulhandbuch entsprechend Ihrer Studien- und Prüfungsordnung gültig und muss zum Studieren herangezogen werden.
+
+	        
+                Notenberechnung
+	        
+	        
+Alle aufklappen
+						
+
+                                        Wie werden die Modulgruppennoten berechnet?
+                                    
+Die Note in einer Modulgruppe ergibt sich aus dem mit den Kreditpunkten gewichteten und auf eine Kommastelle abgeschnittenen arithmetischen Mittel der Modulnoten. Sofern die Leistungen in ECTS-Punkte die Modulobergrenze überschreiten, werden die überschüssigen ECTS-Punkte von dem am schlechtesten bewerteten Modul abgeschnitten. 
+
+                                        Wie berechnet sich die Abschlussnote?
+                                    
+Die Abschlussnote ergibt sich aus dem auf eine Kommastelle abgeschnittenen, gewichteten, arithmetischen Mittel der Noten der einzelnen Module.
+
+Die Prüfungsfächer der einzelnen Modulgruppen sind in Anhang 1 der Studien- und Fachprüfungsordnungen für die Studiengänge definiert. Nur in den sieben-semestrigen Bachelorstudiengängen fließen Grundlagenmodule nicht mit in die Abschlussnote ein. Sowohl in den sechs- als auch sieben-semestrigen Bachelorstudiengängen fließen Module des Kontextstudiums nicht mit in die Abschlussnote ein.
+
+Die im Zeugnis ausgewiesene Note wird nach der ersten Kommastelle abgeschnitten. Bsp.: Die berechnete Note 
+2,18
+ wird als 
+2,1
+ im Zeugnis ausgewiesen.
+
+	        
+                Prüfungen
+	        
+	        
+Alle aufklappen
+						
+
+                                        Wie oft darf ich eine Prüfung wiederholen?
+                                    
+ Eine Prüfung, die im Rahmen eines Studiengangs an der WIAI absolviert wird, kann innerhalb der Höchststudiendauer beliebig oft wiederholt werden.
+
+Die Bachelor- / Masterarbeit kann nur einmal wiederholt werden. 
+
+                                        Ich habe festgestellt, dass mir ein bestimmtes Wahlpflichtmodul wider Erwarten doch nicht liegt. Kann ich das Modul durch ein anderes ersetzen?
+                                    
+Sofern es sich um ein Wahlpflichtmodul handelt, können Sie ein anderes Modul aus dem Wahlpflichtbereich wählen. Teilen Sie bitte dem Prüfungsamt mit (
+Kontaktformular
+), für welches Modul Sie an keinen weiteren Prüfungen teilnehmen werden. Teilen Sie dem Prüfungsamt diese Information bitte bereits 
+vor 
+der Prüfungsanmeldephase mit. Falls Sie dies nicht vor der Prüfungsmeldephase kundgeben, kann es sein, dass sich Sie nicht zu Prüfungen in FlexNow anmelden können bzw. FlexNow eine Anmeldung zu Prüfungen verweigert!
+
+                                        Werden Prüfungen, die ich nicht bestanden habe, im Zeugnis aufgeführt? Werden freiwillige Zusatzleistungen im Zeugnis aufgeführt?
+                                    
+Nicht bestandene Leistungen werden im Abschlusszeugnis nicht aufgeführt. Sofern freiwillige Zusatzleistungen absolviert wurden, wird ein weiteres Zeugnis ausgestellt, auf dem alle bestandenen, freiwilligen Zusatzleistungen verzeichnet sind. Weitere Informationen zum Abschlusszeugnis erhalten Sie vom Prüfungsamt. 
+
+                                        Ich habe nicht alle erforderlichen ECTS bis zum Ende der Höchststudienzeit erbracht. Was kann ich tun?
+                                    
+Siehe 
+Allgemeine Prüfungsordnung der WIAI
+!  
+"§ 20 Endgültiges Nichtbestehen
+(1) 
+Sind nach Ablauf der Höchststudiendauer gemäß § 30 Abs. 2 StuFPO nicht alle im Studiengang zu erbringenden Prüfungsleistungen bestanden, so müssen die noch ausstehenden Prüfungsleistungen innerhalb des nach Ablauf der Höchststudienzeit anschließenden Hochschulsemesters erbracht werden. Hierzu wird die Prüfungskandidatin bzw. der Prüfungskandidat schriftlich aufgefordert. Sind nach Ablauf dieser Frist nicht alle erforderlichen Prüfungsleistungen bestanden, ist der jeweilige Studiengang endgültig nicht bestanden. In diesem Fall ist das Prüfungsverfahren beendet. Noch ausstehende Prüfungsleistungen oder eine in Bearbeitung befindliche Bachelor- oder Masterarbeit können nicht mehr als Prüfungsleistungen im Sinne dieser Prüfungsordnung erbracht werden
+."
+Sofern eine Bachelor- oder Masterarbeit bereits angemeldet wurde, so zählt diese zwangsläufig als "erstmalig nicht bestanden", wenn sie nicht bis zum Ende der regulären Höchststudienzeit abgegeben wird. Meldet also z.B. eine Studierende des Bachelor AI mit einer Regelstudienzeit von 6 Semestern (und dementsprechend einer regulären Höchststudiendauer von 8 Semestern) einen Monat vor Ablauf des 8. Semesters ihre Bachelorarbeit an, beträgt die Bearbeitungszeit nicht mehr wie üblich 4 Monate, sondern nur bis zum Ende der regulären Höchststudiendauer. Sie hat in diesem Fall zwar gemäß APO WIAI, § 20, weiterhin die Möglichkeit, eine Bachelorarbeit abzugeben und ihr Studium abzuschließen. Das einmal begonnene Thema darf aber nicht weiterbearbeitet werden, sondern es wird im neuen Semester ein neues Thema der Abschlussarbeit ausgegeben.
+Der Abgabetermin ist jeweils in FlexNow hinterlegt. Eine nicht bestandene Bachelor- bzw. Masterarbeit kann gemäß § 18 einmal wiederholt werden.
+
+	        
+                Prüfungsanmeldung / Probleme bei der Anmeldung
+	        
+	        
+Alle aufklappen
+						
+
+                                        Ich habe vergessen mich zu den Prüfungen anzumelden. Was kann ich tun?
+                                    
+
+	        
+                Ich habe vergessen mich zu den Prüfungen anzumelden. Was kann ich tun?
+	        
+	        
+Sie sind offenbar nicht im 
+VC-Kurs des Prüfungsausschusses
+ angemeldet - dort wird regelmäßig und fristgerecht an die Prüfungsanmeldefristen erinnert.
+Die Anmeldefristen sind für jeden Studierenden verbindlich. Bei Versäumnis kann die Anmeldung leider nicht nachgeholt werden. Denken Sie im kommenden Semester rechtzeitig an die Prüfungsanmeldung. Melden Sie sich im 
+VC-Kurs des Prüfungsausschusses
+ an!
+
+                                        Modulauswahl und Prüfungsanmeldung in FlexNow
+                                    
+Wenn Sie ein Modul über die 
+FlexNow-Suche
+ während der Prüfungsanmeldephase anmelden, so wird dieses Modul im Freiwilligen Zusatzbereich und 
+nicht 
+in der dafür vorgesehenen Modulgruppe verbucht. Module, die im Freiwilligen Zusatzbereich verbucht werden, zählen nicht zur Studienfortschrittskontrolle.
+
+Daher sollten Sie die Prüfungen über die Baumansicht anmelden, damit diese Module der entsprechenden Modulgruppe zugeordnet werden.
+
+                                        Ich habe eine Prüfung geschrieben und nicht bestanden. Muss ich die Prüfung dann zum nächsten regulären Prüfungstermin wiederholen?
+                                    
+Nein. Module müssen nicht im darauffolgenden Semester wiederholt werden. Sie müssen sich stattdessen zum nächsten gewünschten Termin 
+selbstständig 
+anmelden, sofern Sie an einer Wiederholungsklausur teilnehmen möchten. Sofern es sich um ein Wahlpflichtmodul handelt, können Sie auch ein anderes Modul aus dem Wahlpflichtbereich wählen. Teilen Sie dies jedoch dem Prüfungsamt mit. Andernfalls kann es vorkommen, dass Sie Probleme bei der Anmeldung in der entsprechenden Modulgruppe haben.
+
+                                        Ich habe eine Prüfung geschrieben und nicht bestanden. Werde ich für die Prüfung dann zum nächsten regulären Prüfungstermin zwangsangemeldet?
+                                    
+Nein, Sie müssen sich selbstständig erneut für die Prüfung anmelden. 
+
+                                        Ich habe Probleme bei der Anmeldung zu einer Prüfung. Warum treten diese Probleme auf? Was kann ich tun?
+                                    
+Immer wieder kann es zu Problemen während der Prüfungsanmeldung kommen, insb. kann eine Anmeldung über FlexNow nicht möglich sein, obwohl Sie in den jeweiligen Modulgruppen noch Leistungen erbringen müssen.
+Wie kommt dieses Problem zustande?
+Insbesondere ist darauf zu achten, dass Sie sich von Prüfungen, für die Sie einmal angemeldet waren, die Sie aber nicht mehr ablegen möchten, wieder abmelden. Hier ein Beispiel:
+Nehmen wir an, Sie haben sich im WS 19/20 in einer Modulgruppe (24 ECTS-Punkte) für folgende Module über FlexNow angemeldet:
+    DSG-EiAPS-B (6 ECTS-Punkte, angemeldet)
+    MI-AuD-B (6 ECTS-Punkte, angemeldet)
+    PSI-IntroSP-B (6 ECTS-Punkte, angemeldet)
+Dabei haben Sie jedoch nur DSG-EiAPS-B (6 ECTS-Punkte) und MI-AuD-B (6 ECTS-Punkte) bestanden. PSI-IntroSP-B konnten Sie leider nicht antreten oder haben es nicht bestanden. 
+ Im SS20 würden Sie nun gerne folgenden Module belegen:
+    SWT-FSE-B (6 ECTS-Punkte)
+    MOBI-DBS-B (6 ECTS-Punkte) 
+Das Modul PSI-IntroSP-B möchten Sie nicht mehr belegen.
+In diesem Fall erzeigt FlexNow dennoch einen Fehler bei der Anmeldung, da mehr als 24 ECTS-Punkte in der Modulgruppe verbucht sind.
+Grund: Das nicht bestandene Modul PSI-IntroSP-B zählt in die 24-ECTS-Punkte Punktegrenze mit ein!
+Wie können Sie sich trotzdem ohne Fehlermeldung in FlexNow zu den Prüfungen anmelden?
+ Schreiben Sie dem Prüfungsamt, welches Modul Sie nicht mehr belegen möchten, beantragen Sie entsprechend einen 
+Teilprüfungswechsel
+.
+Wann sollten Sie sich beim Prüfungsamt melden?
+ Melden Sie diese Punkte bereits 
+vor 
+der Prüfungsanmeldung zum Start des jeweiligen Semesters!
+Kontakt beim Prüfungsamt:
+ Bei Problemen zur Prüfungsanmeldung setzen Sie sich mit dem Prüfungsamt WIAI in Verbindung (
+Kontaktformular
+). Schildern Sie das Problem detailliert und wie es Ihrer Meinung nach in FlexNow normalerweise dargestellt wäre.
+
+                                        Ein Modul ist nicht zur Anmeldung im Profilbildungsbereich / Freiwilliger Zusatzbereich in FlexNow zu finden. Muss ich die Klausur auf Schein schreiben?
+                                    
+Nein!
+ Falls Sie sich für ein Modul, welches Sie im Profilbildungsbereich / Freiwilligen Zusatzbereich belegen möchten und das Teil des Curriculums ist, nicht über FlexNow anmelden können, so setzen Sie sich mit dem Prüfungsamt WIAI in Verbindung (Kontaktformular).
+Schildern Sie bitte detailliert, welches Modul Sie gerne einbringen möchten. In den meisten Fällen kann das Modul entsprechend freigeschalten werden, sodass eine Anmeldung über FlexNow möglich wird und Sie die Klausur nicht auf Schein schreiben müssen.
+
+                                        Ich möchte ein Wahlpflichtmodul doch nicht mehr belegen und stattdessen ein anderes Wahlpflichtmodul einbringen (Teilprüfungswechsel). Wie muss ich vorgehen?
+                                    
+Sofern es sich um ein Wahlpflichtmodul handelt, können Sie ein anderes Modul aus dem Wahlpflichtbereich wählen. Teilen Sie bitte dem Prüfungsamt mit (
+Kontaktformular
+), für welches Modul Sie an keinen weiteren Prüfungen teilnehmen werden. 
+
+Teilen Sie diese Information bitte dem Prüfungsamt bereits 
+vor 
+der Prüfungsanmeldephase mit. Falls Sie dies nicht vor der Prüfungsmeldephase kundgeben, kann es sein, dass sich Sie nicht zu Prüfungen in FlexNow anmelden können bzw. FlexNow eine Anmeldung zu Prüfungen verweigert, da die Modulgruppengrenze überschritten wird. 
+
+Bereits angemeldete und nicht bestandene Module werden von FlexNow ebenfalls und fälschlicherweise mit den entsprechenden ECTS-Punkten gewertet und verhindert somit eine Anmeldung bei Überschreitung der Modulgruppengrenze.
+
+                                        Sollte ich mich von einer Klausur abmelden, wenn ich mir sicher bin, die entsprechende Klausur dieses Semester nicht schreiben zu wollen?
+                                    
+Ja, Sie sollten sich entweder gar nicht zur Klausur anmelden oder während der Prüfungsabmeldephase auch wieder abmelden. 
+
+                                        Ein Modul wurde in einer falschen Modulgruppe, z.B. "Freiwilliger Zusatzbereich", angemeldet.
+                                    
+Falls ein Modul in einer falschen Modulgruppe angemeldet wurde, wenden Sie sich für die Verschiebung während der Prüfungsanmeldung an das Prüfungsamt WIAI (
+Kontaktformular
+). 
+Achten Sie bei den nächsten Prüfungsanmeldungen darauf, die korrekte Modulgruppe auszuwählen. Wenn Sie eine Prüfung über die "Suche" auswählen, wird die Prüfung häufig den "freiwilligen Zusatzmodulen" zugeordnet.
+
+	        
+                Übergang Bachelor - Master
+	        
+	        
+Alle aufklappen
+						
+
+                                        Allgemeine Informationen
+                                    
+Informationen zum Übergang vom Bachelorstudium ins Masterstudium an der Uni Bamberg
+(363.5 KB, 1 Seite)
+
+                                        Kann ich bereits im Bachelorstudium Mastermodule belegen und diese in meinem späteren Masterstudium anerkennen lassen?
+                                    
+Ja, Sie können im Bachelorstudium auch Mastermodule im freiwilligen Zusatzbereich verbuchen und diese durch den Prüfungsausschuss anerkennen lassen, sobald Sie im Masterstudiengang an der WIAI-Fakultät eingeschrieben sind und Sie das Bachelorzeugnis erhalten haben. Achten Sie darauf, dass die gewählten Mastermodule in dem angestrebten Masterstudiengang laut Modulhandbuch einbringbar sind. Senden Sie dem Prüfungsausschuss Informatik / Angewandte Informatik hierzu einen entsprechenden Anerkennungsantrag (zu finden im 
+vc-Kurs des Prüfungsausschusses
+).
+Es besteht darüber hinaus die Möglichkeit, sich parallel in den Bachelor- und den Masterstudiengang einzuschreiben, sodass Sie Ihre letzten Prüfungsleistungen im Bachelorstudium und Ihre ersten Prüfungsleistungen im Masterstudium im gleichen Semester parallel erbringen können. Voraussetzung dafür ist aber, dass Sie bereits zum Masterstudium zugelassen sind. Ob diese Möglichkeit für Sie sinnvoll ist, liegt in Ihrem eigenen Ermessen.
+
+                                        Kann ich mich bereits zum Masterstudium bewerben, auch wenn noch nicht alle Prüfungen zum erfolgreichen Bachelorabschluss vorliegen?
+                                    
+Sie können sich zum Masterstudium bewerben, auch wenn noch nicht alle Noten zum erfolgreichen Abschluss des Bachelorstudiums vorliegen. Auch wenn Ihnen nur noch wenige ECTS-Punkte im Bachelorstudium fehlen, ist eine Bewerbung schon möglich. Falls das Zeugnis für die Einschreibung noch nicht vorhanden ist, muss das fehlende Zeugnis innerhalb eines Jahres bei der Studierendenkanzlei nachgerecht werden. 
+
+                                        Bis wann muss ich meine Bachelorarbeit abgegeben haben, wenn ich kommendes Semester im Master studieren möchte?
+                                    
+Wenn Sie ihr Bachelorstudium im WiSe (SoSe) abschließen wollen, so müssen Sie Ihre letzte Prüfungsleistung bis zum 31.03. (30.09.) erbracht haben. Ist Ihre letzte Prüfungsleistung die Bachelorarbeit, so ist der letzte Tag des Semesters auch der letztmögliche Abgabetermin.
+
+Es besteht die Möglichkeit, sich parallel in den Bachelor- und den Masterstudiengang einzuschreiben, so dass Sie Ihre Bachelorarbeit auch erst in dem Semester abgegeben können, in dem Sie bereits Mastermodule belegen wollen. Voraussetzung dafür ist aber, dass Sie bereits zum Masterstudium zugelassen sind. 
+
+	        
+                Zugangsvoraussetzungen
+	        
+	        
+Alle aufklappen
+						
+
+                                        Ich habe bereits ein Studium in einem gleichwertigen Fachgebiet an einer anderen Uni begonnen, wurde aber aufgrund eines ENB-Entscheides exmatrikuliert. Darf ich dennoch ein Studium an der Uni Bamberg aufnehmen?
+                                    
+Da es an der Universität Bamberg keine ENB-Klausel gibt, können Sie sich problemlos an der WIAI einschreiben. 
+
+                                        Ich habe mein Bachelorstudium an einer anderen Universität abgeschlossen. Ich bin mir unsicher, ob ich die Zugangsvoraussetzungen für einen Masterstudiengang erfülle.
+                                    
+Verbindliche Informationen zu den Zugangsvoraussetzungen erhalten Sie in der jeweiligen Studien- und Fachprüfungsordnungen sowie über den 
+Bewerbungsprozess
+. 
+
+                                        Welche Fristen muss ich bei einer Bewerbung/Einschreibung beachten?
+                                    
+Einschreiben für ein Bachelorstudium: 
+zentrale Fristen
+.
+Bewerbung für ein Masterstudium: Für die Bewerbung zum Master gelten folgende Bewerbungsfristen (siehe 
+Ankündigung Studierendenkanzlei
+). Bitte beachten Sie jedoch, dass aus organisatorischen Gründen Bewerbungen für das Wintersemester bis zum 31.08., für das Sommersemester bis zum 28.02. eines Jahres erfolgen sollten. Nach Eingang Ihrer Bewerbung wird diese sofort bearbeitet und das Bewerbungsverfahren innerhalb kurzer Zeit zum Abschluss gebracht. Sie erhalten dann eine Zu- bzw. Absage und können so frühzeitig Ihr Masterstudium planen.
+  
+
+                                        Welche Zugangsvoraussetzungen muss ich für die Aufnahme eines Bachelorstudienganges an der Fakultät WIAI erfüllen? Muss ich Praktika o.ä. im Voraus ableisten?
+                                    
+Für das Studium benötigen Sie kein Orientierungs- oder Betriebspraktikum.
+ Als Zugangsvoraussetzungen werden gute Deutsch-, Englisch- und Mathematikkenntnisse erwartet. Sie können jedoch unzureichende Kenntnisse frühzeitig, z.B. durch einen Mathe-Vorkurs oder Englisch-Kurs ergänzen.
+  
+
+                                        Ich habe vorher im Ausland studiert und interessiere mich jetzt für ein Studium an der WIAI. Kann ich mich für diese Studiengänge bewerben?
+                                    
+Soweit sie die Zulassungsvoraussetzungen erfüllen, können Sie sich für den für Sie interessanten Studiengang einschreiben bzw. bewerben. Bei besonderen Abweichungen (ausländische Hochschulzugangsberechtigung etc.) und für weitere Anliegen ausländischer Studierender hilft das 
+Akademische Auslandsamt
+ weiter.
+
+	        
+                Sonstiges
+	        
+	        
+Alle aufklappen
+						
+
+                                        Ich war bei den Einführungstagen (EETs) leider verhindert und habe jetzt keinen Stundenplan erstellt. Welche Kurse soll ich im ersten Semester am besten belegen?
+                                    
+Den Stunden- und Studienplan, der bei den EETs vorgestellt wird finden Sie auf den Webseiten der 
+Fachschaft
+. Außerdem fasst die aktuellste Broschüre auch alle wichtigen Informationen zusammen, die insb. bei der Facheinführung vorgestellt werden.
+Weitere Informationen, wie Sie den Stundenplan im Univis erstellen, finden Sie 
+hier
+. Weitere praktische Informationen für den Studienstart finden Sie auf den Webseiten der 
+Studierendenkanzlei
+. (Vorlesungszeiten- und Fristen, Studienförderung, Internet-Dienste, Semesterticket, Studierendenausweis, Rückmeldung, Wechsel, Beurlaubung, Exmatrikulation).
+ 
+
+                                        Ich würde gerne ein Praktikum machen. Gibt es Hilfe durch die Universität?
+                                    
+Ja, die Fakultät hat ein eigenes 
+Career Center
+. Hier können Sie sich über aktuelle Events informieren und nach Kooperationspartnern suchen. In dem VC-Kurs 
+„Jobbörse WIAI"
+ werden regelmäßig aktuelle Jobangebote eingestellt. Sollten Sie detaillierte Fragen haben, können Sie sich jederzeit an das Career Center WIAI wenden.
+
+                                        Ich habe alle Leistungen meiner Bachelor- oder Masterprüfung erbracht. Wie erhalte ich mein Zeugnis?
+                                    
+Sobald alle Noten Ihrer Bachelor- oder Masterprüfung in FlexNow verbucht sind, wird das Zeugnis vom Prüfungsamt erstellt. Dieses muss dann noch vom Dekan der Fakultät und dem Prüfungsausschussvorsitzenden unterschrieben werden. Außerdem wird noch die Urkunde Ihres akademischen Grads erstellt und vom Präsidenten unterschrieben. Ist dies alles erfolgt, werden Sie benachrichtigt und Sie können Ihr Zeugnis im Prüfungsamt abholen.
+
+Wenn Sie noch freiwillige Zusatzleistungen absolvieren, so zögert sich das Erstellen des Zeugnisses noch bis zum Ende des jeweiligen Semesters heraus.
+Seite 146663
+Kontakt
+Impressum
+Datenschutz
+Zentrale Online-Services
+Bamberger Katalog (Universitätsbibliothek)
+FIS (Forschungsinformationssystem)
+FlexNow2 für Studierende
+FlexNow2 für Mitarbeitende
+Intranet
+Office 365
+Online-Dienste
+(Studierendenkanzlei)
+UnivIS
+Uni-Webmail:
+https://mailex.uni-bamberg.de
+https://o365.uni-bamberg.de
+Virtueller Campus
+Wichtige Links
+Presse
+Öffnungszeiten
+Prüfungsamt
+IT-Service der Universität
+Rückmeldung
+Studierendenkanzlei
+Universitätsbibliothek
+Vorlesungszeiten & Fristen
+Studienangebot
+Uni Bamberg in leichter Sprache
+Zentraler Kontakt 
+Otto-Friedrich-Universität Bamberg
+ Kapuzinerstraße 16
+ 96047 Bamberg
+Telefon: 0951 863-0
+ E-Mail: 
+post(at)uni-bamberg.de
+Unsere Netzwerke
+Unsere Zertifikate
+Folgen Sie uns
+Instagram
+Facebook
+Bluesky
+Toktok
+Newsletter abonnieren
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
