@@ -4,3 +4,5 @@
 # ºöÂÔ Python ±àÒë»º´æ
 __pycache__/
 *.pyc
+baseline/llms/tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf
+baseline/llms/tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf
