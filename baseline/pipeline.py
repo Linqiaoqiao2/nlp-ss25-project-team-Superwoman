@@ -1,5 +1,5 @@
 # pipeline.py
-from retriever.retriever import Retriever
+from retriever.retriever_bge_m3 import Retriever
 from generator.generator import Generator
 from util.fileUtil import FileUtil
 from util.logger_config import setup_logger
@@ -13,7 +13,7 @@ class RAGPipeline:
         self.retriever.add_documents(document_paths)
 
         model_path = FileUtil.get_model_filePath()
-        self.generator = Generator(filePath=model_path)
+        self.generator = Generator(file_path=model_path)
         self.prompt_template = prompt_template
 
     def run(self, query: str, top_k: int = 3) -> str:
