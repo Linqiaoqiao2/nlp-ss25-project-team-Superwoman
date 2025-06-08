@@ -60,6 +60,7 @@ class Generator:
         query: str,
         context_chunks: List[Union[str, Tuple[Any, float]]],
         prompt_template: str,
+        previous_conversation: str | None
     ) -> str:
         query = self.clean_query(query)
         max_context_tokens = 1024
@@ -79,6 +80,9 @@ class Generator:
         context = "\n".join(prompt_chunks)
         prompt = prompt_template.format(context=context, query=query)
 
+        if previous_conversation:
+            prompt = previous_conversation + "\n" + prompt
+        
         # Language detection
         try:
             language = detect(query)
