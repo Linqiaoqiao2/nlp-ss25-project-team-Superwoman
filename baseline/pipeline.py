@@ -20,3 +20,12 @@ class RAGPipeline:
         top_chunks = self.retriever.query(query, top_k=top_k)
         logger.info(f"Top chunks choosen: {top_chunks}")
         return self.generator.generate_answer(query, top_chunks, self.prompt_template)
+    
+    def run_chatbot(self, top_k: int = 3) -> str:
+        previous_conversation = None
+        while (True):
+            query = input()
+            top_chunks = self.retriever.query(query, top_k=top_k)
+            logger.info(f"Top chunks choosen: {top_chunks}")
+            result = self.generator.generate_answer(query, top_chunks, self.prompt_template, previous_conversation)
+            previous_conversation += "\n" + query + "\n" + result
