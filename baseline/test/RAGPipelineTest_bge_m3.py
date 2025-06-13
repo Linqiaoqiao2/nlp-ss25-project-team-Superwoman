@@ -19,7 +19,7 @@ class TestGenerator(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         # Use your actual data directory
-        data_dir = Path("D:\\Model_bge_m3\\Model_bge_m3\\baseline\data")
+        data_dir = Path("/Users/subhasrisuresh/mastersProject/git_project/nlp-ss25-project-team-Superwoman/baseline/data")
 
         # Find all subdirectories starting with 'cleaned_'
         cleaned_dirs = [p for p in data_dir.iterdir() if p.is_dir() and p.name.startswith("cleaned_")]
@@ -37,7 +37,7 @@ class TestGenerator(unittest.TestCase):
 
         cls.pipeline = RAGPipeline(
             document_paths=document_paths,
-            prompt_template=(
+            prompt_template=("You are a helpful assistant for question-answering tasks. Take the following question (the user query) and use this helpful information (the data retrieved in the similarity search) to answer it. If you don't know the answer based on the information provided, just say you don't know."
                 "Context:\n{context}\n\n"
                 "Question:\n{query}\n\n"
                 "Answer:"
@@ -62,7 +62,9 @@ class TestGenerator(unittest.TestCase):
 
         with questions_file.open("r", encoding="utf-8") as qf:
             for query in qf:
-                answer = self.pipeline.run(query)
+                # answer = self.pipeline.run(query)
+                answer = self.pipeline.run_chatbot(query)
+
                 print("Q:", query.strip())
                 print("A:", answer.strip())
                 self._write_output(query, answer)

@@ -18,5 +18,6 @@ class RAGPipeline:
 
     def run(self, query: str, top_k: int = 3) -> str:
         top_chunks = self.retriever.query(query, top_k=top_k)
-        logger.info(f"Top chunks choosen: {top_chunks}")
+        logger.info(f"Top chunks choosen:\n")
+        logger.info(f"------>\n".join(top_chunks))
         return self.generator.generate_answer(query, top_chunks, self.prompt_template)

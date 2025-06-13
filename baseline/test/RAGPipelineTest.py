@@ -38,7 +38,8 @@ class TestGenerator(unittest.TestCase):
 
         with open(self.questions_file, "r", encoding="utf-8") as file:
             for query in file:
-                answer = self.pipeline.run(query)
+                # answer = self.pipeline.run(query)
+                answer = self.pipeline.run_chatbot(query)
                 self.writeOutput(query, answer)
                 self.assertIsInstance(answer, str)
 
