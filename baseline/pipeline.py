@@ -29,4 +29,4 @@ class RAGPipeline:
             logger.info(f"Top chunks choosen: {top_chunks}")
             result = self.generator.generate_answer(query, top_chunks, self.prompt_template, previous_conversation)
             previous_conversation += query + result
-            print("End of answer")
+            print("\nEnd of answer")
