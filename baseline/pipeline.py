@@ -26,5 +26,10 @@ class RAGPipeline:
             previous_conversation += query + result
             logger.info(f"Question: {query}")
             logger.info(f"Answer: {result}")
+            # print(f"? conversation history: {previous_conversation}")
             print("\nEnd of answer\n\n\n")
             return result
+    
+    def getChatSummary(self, chat: str):
+        return self.generator.summarize_chat_history(chat)
+        

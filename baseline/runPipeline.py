@@ -2,6 +2,7 @@ from pathlib import Path
 import gradio as gr
 from util.fileUtil import FileUtil
 from pipeline import RAGPipeline
+from generator.generator import Generator
 
 
 def main():
@@ -17,24 +18,27 @@ def main():
     pipeline = RAGPipeline(document_paths=document_paths, prompt_template=prompt_template)
 
     # Define a wrapper for the chatbot interaction
-    def chatbot_response(message, history):
+    def chatbot_response(message, history, summary=""):
         response = pipeline.run_chatbot(message)  # your existing logic
         history.append((message, response))
+        new_qa = f"User: {message}\nBot: {response}"
+        summary = pipeline.getChatSummary(summary+new_qa)
+        print(f"? conversation summary: {summary}")
         return history
 
     # Build Gradio chatbot interface
-    with gr.Blocks() as demo:
+    with gr.Blocks() as chat:
         gr.Markdown("# 🎓 University Bot")
         gr.Markdown("Ask a question and get an answer based on university course and site information.")
 
         chatbot = gr.Chatbot()
         msg = gr.Textbox(placeholder="Enter your question and press Enter")
-        clear = gr.Button("Clear Chat")
+        # clear = gr.Button("Clear Chat")
 
         msg.submit(chatbot_response, [msg, chatbot], chatbot)
-        clear.click(lambda: [], None, chatbot)
+        # clear.click(lambda: [], None, chatbot)
 
-    demo.launch()
+    chat.launch()
 
 if __name__ == "__main__":
     main()

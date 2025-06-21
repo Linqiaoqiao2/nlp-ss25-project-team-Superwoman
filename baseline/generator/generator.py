@@ -20,7 +20,7 @@ class Generator:
     retrieved context and returns an answer. Supports DE/EN language detection.
     """
 
-    def __init__(self, file_path: str, max_tokens: 1024) -> None:
+    def __init__(self, file_path: str, max_tokens= 1024) -> None:
         try:
             logger.info(f"Loading model from: {file_path}")
 
@@ -96,7 +96,8 @@ class Generator:
         
         return self.llm.invoke(prompt)
     
-    def summarize_chat_history(chat_history, max_tokens=100):
+
+    def summarize_chat_history(self, chat_history, max_tokens=100):
         prompt = f"Summarize the following chat:\n\n{chat_history}\n\nSummary:"
-        summary = self.llm.invoke(prompt),
+        summary = self.llm.invoke(prompt, max_tokens=max_tokens)
         return summary
