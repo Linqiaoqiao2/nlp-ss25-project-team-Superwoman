@@ -19,7 +19,9 @@ class TestGenerator(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         # Use your actual data directory
-        data_dir = Path("/Users/subhasrisuresh/mastersProject/git_project/nlp-ss25-project-team-Superwoman/baseline/data")
+        current_dir = Path(__file__).parent
+        data_dir = (current_dir / "../data").resolve()
+        # data_dir = Path("/Users/subhasrisuresh/mastersProject/git_project/nlp-ss25-project-team-Superwoman/baseline/data")
 
         # Find all subdirectories starting with 'cleaned_'
         cleaned_dirs = [p for p in data_dir.iterdir() if p.is_dir() and p.name.startswith("cleaned_")]
@@ -62,9 +64,9 @@ class TestGenerator(unittest.TestCase):
 
         with questions_file.open("r", encoding="utf-8") as qf:
             for query in qf:
-                # answer = self.pipeline.run(query)
                 answer = self.pipeline.run_chatbot(query)
-
+                if not query.strip():
+                    continue 
                 print("Q:", query.strip())
                 print("A:", answer.strip())
                 self._write_output(query, answer)

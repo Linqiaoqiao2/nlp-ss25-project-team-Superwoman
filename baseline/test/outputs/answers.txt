@@ -1,29 +1,11 @@
 === Summarization Test Output ===
 
 Query: What is the main focus of this field of study?
-Answer: The main focus of the field of study is on "Angewandte Informatik". It offers a broad spectrum of theoretic modules, and students with a preference for practical work can choose besides the master thesis two projects in which they can work on current research topics. In this modular group, optional Fachkenntnisse in application fields such as Wirtschaftsinformatik, Geosciences, Sociology, Denkmalpflege, Psychology, Wirtschaftspädagogik or Communication Sciences can be acquired. A master thesis of 15 ECTS is required to complete the degree program, and an optional further master thesis, projects or seminars are available in the field of applied informatics.
+Answer: The field of study focuses on the application of natural language processing in various contexts such as conversation history. The main focus of this field of study is on the implementation and analysis of advanced natural language processing techniques and tools, including but not limited to machine learning algorithms, deep neural networks, virtual reality, and augmented reality. Additionally, it involves the development of advanced dialogue systems and conversational AI, knowledge representation and reasoning, and ethical issues related to artificial intelligence.
 ----------------------------------------
 Query: How long does the program usually take to complete？
-Answer: The program usually takes 4 semesters to complete.
+Answer: The program usually takes 4 semesters to complete full-time and part-time is possible.
 ----------------------------------------
 Query: Are there opportunities for students to study abroad or do internships as part of the program?
-Answer: Yes, the program offers opportunities for students to study abroad or do internships as part of the program. The program includes a study abroad component in which students can participate in a study abroad program through partnerships with universities around the world. Additionally, the program encourages students to pursue internships and other experiential learning opportunities, both locally and internationally. The program also has partnerships with several companies and organizations that offer internships and other experiential learning opportunities for students.
-----------------------------------------
-Query: 
-Answer: Answer:
-----------------------------------------
-Query: 
-Answer: In this case, the answer would be the degree program or major in "Social and Population Geography" at 31.03.2029, as it is the only program that offers a minimum of 90 ECTS credits. The other programs listed range from 69 to 90 ECTS credits, with some offering more than one degree program within the same credit range.
-----------------------------------------
-Query: Womit beschäftigt sich dieses Studienfach hauptsächlich?
-Answer: Dieses Angewandtes Studiengang wird hauptsächlich mit dem Ziel beschäftigt, die Wirtschaftspreise eines Unternehmens zu optimieren. Die Absolventen dieser Ausbildung haben sehr gute Arbeitsmarktchancen und können in verschiedenen Berufsbereichen arbeiten. Sie werden sicher sein, dass sie nach der Abschluss des Studiums eine Stelle finden können.
-----------------------------------------
-Query: Wie lange dauert das Studium in der Regel？
-Answer: The duration of the study is typically 6 semesters for a Bachelor's degree and 4 semesters for a Master's degree. However, if the student does not submit their final thesis by the end of the regular academic year, they will have to complete a new thesis in the next semester.
-----------------------------------------
-Query: Gibt es im Rahmen des Studiengangs Möglichkeiten für Auslandsaufenthalte oder Praktika?
-Answer: Es gibt im Rahmen des Studiengangs Möglichkeiten für Auslandsaufenthalte und Praktika.
-----------------------------------------
-Query: 
-Answer: Based on the provided list, it appears that there are several different programs of study available, each with its own specific focus and curriculum. Some programs offer a Bachelor of Arts (BA) or Master of Arts (MA) degree in various fields such as Theology, Cultural Studies, Business Administration, Turkish Studies, Archaeology, Value Chain Management, and many more. Other programs are focused on specific areas of interest such as Strategic Communication, Virtual Learning, and Survey Statistics. The programs range from 60 to 120 ECTS credits, with some offering a combination of online and on-campus courses.
+Answer: Yes, there are opportunities for students to study abroad or do internships as part of the program. The specific details of these opportunities will depend on the individual master's degree program and department offering the course of study. Students should explore these opportunities with their respective department or program and meet any requirements or qualifications necessary to participate in an internship or study abroad program.
 ----------------------------------------

@@ -35,7 +35,9 @@ class FileUtil:
 
     @staticmethod
     def get_all_cleaned_data_filenames():
-        data_dir = Path("../data").resolve()
+        current_dir = Path(__file__).parent
+        data_dir = (current_dir / "../data").resolve()
+        print(f"Data directory path: {data_dir.resolve()}")
 
         # Find all subdirectories starting with 'cleaned_'
         cleaned_dirs = [p for p in data_dir.iterdir() if p.is_dir() and p.name.startswith("cleaned_")]
