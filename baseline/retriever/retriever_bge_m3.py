@@ -22,6 +22,7 @@ class Retriever:
         chunk_size: int = 200,
         chunk_overlap: int = 50,
         dense_weight: float = 0.5,  # 0 → pure BM25, 1 → pure dense
+        use_reranker: bool = True
     ):
         # Embedding and tokenizer setup
         self.embedder = SentenceTransformer(model_name, trust_remote_code=True)
@@ -31,7 +32,11 @@ class Retriever:
         self.chunk_size = chunk_size
         self.chunk_overlap = chunk_overlap
         self.dense_weight = dense_weight
-
+        self.use_reranker = use_reranker
+        if use_reranker:
+            self.reranker = CrossEncoder(reranker_name)
+        else:
+            self.reranker = None
         self.chunks: List[str] = []
         self.bm25: Optional[BM25Okapi] = None
         self.index: Optional[faiss.Index] = None
@@ -52,8 +57,8 @@ class Retriever:
     def _chunk_text(self, text: str) -> List[str]:
         """Tokenize text into overlapping chunks."""
         max_model_length = 512
-        tokens = self.tokenizer.tokenize(text)
-        ids = self.tokenizer.convert_tokens_to_ids(tokens)
+        tokens = self.tokenizer.tokenize(text) #['hello', 'world', '!']
+        ids = self.tokenizer.convert_tokens_to_ids(tokens) #	[7592, 2088]
 
         # 保证 chunk_size 不超过模型最大输入限制
         chunk_size = min(self.chunk_size, max_model_length)
@@ -96,7 +101,9 @@ class Retriever:
 
     # --------- Hybrid retrieval ---------
     def query(self, query: str, top_k: int = 5) -> List[Tuple[str, float]]:
-        """Retrieve top-k relevant text chunks using hybrid dense + sparse + reranker."""
+        """Retrieve top-k relevant text chunks using hybrid dense + sparse retrieval,
+        with optional cross-encoder reranking."""
+
         if self.index is None or self.bm25 is None:
             raise RuntimeError("Call add_documents() first.")
 
@@ -119,10 +126,14 @@ class Retriever:
         fused.sort(key=lambda x: x[1], reverse=True)
         cand_idx = [i for i, _ in fused[: top_k * 4]]
 
-        # Cross-encoder reranking with truncation safeguard
-        pairs = [self._truncate_pair(query, self.chunks[i]) for i in cand_idx]
-        ce_scores = self.reranker.predict(pairs)
-        final = sorted(zip(cand_idx, ce_scores), key=lambda x: x[1], reverse=True)[: top_k]
+        # If reranker is enabled, rerank top candidates
+        if hasattr(self, "use_reranker") and self.use_reranker and self.reranker is not None:
+            pairs = [self._truncate_pair(query, self.chunks[i]) for i in cand_idx]
+            ce_scores = self.reranker.predict(pairs)
+            final = sorted(zip(cand_idx, ce_scores), key=lambda x: x[1], reverse=True)[: top_k]
+        else:
+            # If not using reranker, return top_k from fused scores
+            final = fused[:top_k]
 
         return [(self.chunks[i], float(s)) for i, s in final]
 
