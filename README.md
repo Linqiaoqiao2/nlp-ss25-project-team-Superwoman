@@ -11,7 +11,7 @@ This repository hosts the code for a semester-long project on building and exper
 
 ## Folder Structure
 <pre> 
-project-root/
+baseline/
 .
 ├── data
 │   ├── Germany's foreign policy?.txt
@@ -41,10 +41,12 @@ project-root/
 
 
 </pre>
- 1. **To run the RAGPipeline with test data/questions:** python test/RAGPipelineTest.py
- 2. **To test with new question, add your question to:** test/input/questions.txt
- 3. **Output file:** test/output/answers.txt
- 4. **LLMS can be download based on the use case and placed in the llms folder:**  https://raw.githubusercontent.com/nomic-ai/gpt4all/main/gpt4all-chat/metadata/models2.json
+## Steps to run from the `baseline` folder
+ 1. **To run chatbot:** python runPipeline.py  
+ 2. **To run the RAGPipeline with test data/questions:** python test/RAGPipelineTest.py
+ 3. **To test with new question, add your question to:** test/input/questions.txt
+ 4. **Output file:** test/output/answers.txt
+ 5. **LLMS can be download based on the use case and placed in the llms folder:**  https://raw.githubusercontent.com/nomic-ai/gpt4all/main/gpt4all-chat/metadata/models2.json
  
 ---
 

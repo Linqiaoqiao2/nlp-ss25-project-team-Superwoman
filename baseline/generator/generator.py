@@ -60,6 +60,7 @@ class Generator:
         query: str,
         context_chunks: List[Union[str, Tuple[Any, float]]],
         prompt_template: str,
+        previous_conversation: str = ""
     ) -> str:
         query = self.clean_query(query)
         max_context_tokens = 1024
@@ -78,21 +79,21 @@ class Generator:
 
         context = "\n".join(prompt_chunks)
         prompt = prompt_template.format(context=context, query=query)
-
+        
         # Language detection
         try:
             language = detect(query)
             if language == 'de':
-                prompt = f"Bitte beantworte die folgende Frage auf Deutsch: {prompt}"
+                prompt = f"{previous_conversation}\nBitte beantworte die folgende Frage auf Deutsch: {prompt}"
             elif language == 'en':
-                prompt = f"Please answer the following question in English: {prompt}"
+                prompt = f"{previous_conversation}\nPlease answer the following question in English: {prompt}"
             else:
                 logger.warning("Unsupported language detected. Defaulting to English.")
-                prompt = f"Please answer the following question in English: {prompt}"
+                prompt = f"{previous_conversation}\nPlease answer the following question in English: {prompt}"
         except Exception as e:
-            logger.warning(f"Language detection failed: {e}. Defaulting to English.")
-            prompt = f"Please answer the following question in English: {prompt}"
-
+            logger.warning(f"Language detection failed: {e}")
+            return ""
+        
         logger.info(f"[Generator] Prompt approx. length: {token_count} tokens")
 
         return self.llm.invoke(prompt)
