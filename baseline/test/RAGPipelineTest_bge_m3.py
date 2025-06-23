@@ -61,15 +61,16 @@ class TestGenerator(unittest.TestCase):
     def test_ask_questions(self):
         """Iterate through questions.txt and ensure answers are strings."""
         questions_file = Path(__file__).resolve().parent / "input" / "questions.txt"
-
+        summary = ""
         with questions_file.open("r", encoding="utf-8") as qf:
             for query in qf:
-                answer = self.pipeline.run_chatbot(query)
+                answer = self.pipeline.run_chatbot(query, previous_conversation=summary)
                 if not query.strip():
                     continue 
                 print("Q:", query.strip())
                 print("A:", answer.strip())
                 self._write_output(query, answer)
+                # summary = self.pipeline.getChatSummary(summary+query+answer)
                 self.assertIsInstance(answer, str)
 
 

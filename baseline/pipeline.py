@@ -16,14 +16,13 @@ class RAGPipeline:
         self.generator = Generator(file_path=model_path)
         self.prompt_template = prompt_template
 
-    def run_chatbot(self, query: str, top_k: int = 3) -> str:
-        previous_conversation = "Conversation history:\n"
+    def run_chatbot(self, query: str, top_k: int = 3, previous_conversation: str = "") -> str:
         while (True):
             # query = input("\nPlease type your question: ")
-            top_chunks = self.retriever.query(query, top_k=top_k)
-            logger.info(f"Top chunks choosen\n: {top_chunks}")
+            top_chunks = self.retriever.query(query, top_k=2)
+            # logger.info(f"Top chunks choosen\n: {top_chunks}")
             result = self.generator.generate_answer(query, top_chunks, self.prompt_template, previous_conversation)
-            previous_conversation += query + result
+            # previous_conversation += query + result
             logger.info(f"Question: {query}")
             logger.info(f"Answer: {result}")
             # print(f"? conversation history: {previous_conversation}")

@@ -30,6 +30,7 @@ class FileUtil:
     def get_model_filePath():
         current_dir = os.path.dirname(__file__)
         dir = os.path.join(current_dir,"../llms")
+        logger.info(f"llm directory Choosen: {dir}")
         return FileUtil.get_first_file_path_dir(dir)
     
 
