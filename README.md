@@ -14,10 +14,7 @@ This repository hosts the code for a semester-long project on building and exper
 baseline/
 .
 ├── data
-│   ├── Germany's foreign policy?.txt
-│   ├── Rotkaeppchen.pdf
-│   ├── ai_human.md
-│   └── darwins_theory.txt
+│   ├── ** your data goes here **
 ├── generator
 │   └── generator.py
 ├── llms
@@ -33,7 +30,7 @@ baseline/
 |   |   └── questions.txt
 │   ├── outputs
 |   |   └── answers.txt
-│   ├── RAGPipelineTest.py
+│   ├── RAGPipelineTest_bge_m3.py
 │   └── test_retriever.py
 └── util
     ├── fileUtil.py
@@ -43,7 +40,7 @@ baseline/
 </pre>
 ## Steps to run from the `baseline` folder
  1. **To run chatbot:** python runPipeline.py  
- 2. **To run the RAGPipeline with test data/questions:** python test/RAGPipelineTest.py
+ 2. **To run the RAGPipeline with test data/questions:** python test/RAGPipelineTest_bge_m3.py
  3. **To test with new question, add your question to:** test/input/questions.txt
  4. **Output file:** test/output/answers.txt
  5. **LLMS can be download based on the use case and placed in the llms folder:**  https://raw.githubusercontent.com/nomic-ai/gpt4all/main/gpt4all-chat/metadata/models2.json
