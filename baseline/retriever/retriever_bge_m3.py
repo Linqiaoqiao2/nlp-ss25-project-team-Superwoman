@@ -5,7 +5,9 @@ from typing import List, Tuple, Sequence, Optional
 from sentence_transformers import SentenceTransformer, CrossEncoder
 from transformers import AutoTokenizer
 from rank_bm25 import BM25Okapi
+from util.logger_config import setup_logger
 
+logger = setup_logger("Retriever", log_file="logs/RAGPipeline.log")
 
 class Retriever:
     """
@@ -68,13 +70,15 @@ class Retriever:
             self.tokenizer.decode(ids[i : i + chunk_size], skip_special_tokens=True)
             for i in range(0, len(ids), step)
         ]
-
+        
         return chunks
 
 
     # --------- Index building ---------
     def add_documents(self, paths: Sequence[str]) -> None:
         """Build dense FAISS index and sparse BM25 index from input documents."""
+        logger.info("Tokenize text into overlapping chunks.")
+
         for p in paths:
             self.chunks.extend(self._chunk_text(self._load_document(p)))
 
@@ -82,6 +86,8 @@ class Retriever:
         vecs = self.embedder.encode(
             self.chunks, normalize_embeddings=True, convert_to_numpy=True, show_progress_bar=True
         )
+
+        logger.info("Build dense FAISS index and sparse BM25 index from input documents.")
         self.index = faiss.IndexFlatIP(vecs.shape[1])
         self.index.add(vecs)
 
@@ -101,9 +107,9 @@ class Retriever:
 
     # --------- Hybrid retrieval ---------
     def query(self, query: str, top_k: int = 5) -> List[Tuple[str, float]]:
-        """Retrieve top-k relevant text chunks using hybrid dense + sparse retrieval,
-        with optional cross-encoder reranking."""
-
+        
+        """Retrieve top-k relevant text chunks using hybrid dense + sparse + reranker."""
+        logger.info("Retrieve top-k relevant text chunks using hybrid dense + sparse + reranker.")
         if self.index is None or self.bm25 is None:
             raise RuntimeError("Call add_documents() first.")
 

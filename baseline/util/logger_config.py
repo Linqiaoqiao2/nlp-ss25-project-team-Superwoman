@@ -4,7 +4,7 @@ import os
 
 
 def setup_logger(name: str, log_file: str = "rag_pipeline.log", level=logging.INFO):
-    logger = logging.getLogger(name)
+    logger = logging.getLogger("Team SuperWoman -"+name)
     logger.setLevel(level)
 
 
@@ -18,12 +18,16 @@ def setup_logger(name: str, log_file: str = "rag_pipeline.log", level=logging.IN
     file_handler = logging.FileHandler(log_file)
     file_handler.setLevel(level)
 
+    # Create console (stream) handler
+    console_handler = logging.StreamHandler()
+    console_handler.setLevel(logging.DEBUG)
+
+
     # Formatter
-    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+    formatter = logging.Formatter('\n%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     file_handler.setFormatter(formatter)
 
-    # Avoid duplicate logs
-    if not logger.handlers:
-        logger.addHandler(file_handler)
+    logger.addHandler(file_handler)
+    logger.addHandler(console_handler)
 
     return logger
