@@ -21,7 +21,7 @@ class FileUtil:
 
         # Get the first file
         first_file = files[0]
-        logger.info(f"Model Choosen: {first_file}")
+        logger.info(f"LLM Model Choosen: {first_file}")
 
         model_file_path = os.path.join(directory_path, first_file)
         return model_file_path
@@ -30,7 +30,7 @@ class FileUtil:
     def get_model_filePath():
         current_dir = os.path.dirname(__file__)
         dir = os.path.join(current_dir,"../llms")
-        logger.info(f"llm directory Choosen: {dir}")
+        logger.info(f"llm directory: {dir}")
         return FileUtil.get_first_file_path_dir(dir)
     
 

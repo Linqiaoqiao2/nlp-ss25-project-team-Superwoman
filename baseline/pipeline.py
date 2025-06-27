@@ -20,7 +20,7 @@ class RAGPipeline:
         while (True):
             # query = input("\nPlease type your question: ")
             top_chunks = self.retriever.query(query, top_k=2)
-            # logger.info(f"Top chunks choosen\n: {top_chunks}")
+            logger.info(f"Top chunks choosen\n: {top_chunks}")
             result = self.generator.generate_answer(query, top_chunks, self.prompt_template, previous_conversation)
             # previous_conversation += query + result
             logger.info(f"Question: {query}")

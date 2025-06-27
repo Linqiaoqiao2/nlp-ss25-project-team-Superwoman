@@ -98,7 +98,7 @@ class Generator:
         except Exception as e:
             logger.warning(f"Language detection failed: {e}")
             return ""
-        print(f"\nPrompt =============: {prompt}\n==============")
+        logger.info(f"\nPrompt =============: {prompt}\n==============")
         return self.llm.invoke(prompt, max_tokens=506)
     
 
