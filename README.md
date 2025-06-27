@@ -25,7 +25,7 @@ baseline/
 │   └── ** your model goes here **
 ├── logs
 │   └── retriever.log
-├── pipeline.py
+├── runPipeline.py
 ├── retriever
 │   └── retriever.py
 ├── test
