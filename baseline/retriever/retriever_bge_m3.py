@@ -44,14 +44,27 @@ class Retriever:
     # --------- File loading ---------
     @staticmethod
     def _load_document(path: str) -> str:
-        """Load and extract text from txt/md/pdf documents."""
+        """
+        Load and extract text from txt/md/pdf/json documents for RAG pipeline.
+        """
         suffix = Path(path).suffix.lower()
         if suffix in (".txt", ".md"):
             return Path(path).read_text(encoding="utf-8")
-        if suffix == ".pdf":
+        elif suffix == ".pdf":
+            import fitz
             pdf = fitz.open(path)
             return "\n".join(p.get_text() for p in pdf)
-        raise ValueError(f"Unsupported format: {suffix}")
+        elif suffix == ".json":
+            import json
+            data = json.loads(Path(path).read_text(encoding="utf-8"))
+            if isinstance(data, dict) and "content" in data:
+                return data["content"]
+            elif isinstance(data, list):
+                return "\n\n".join(item.get("content", "") for item in data if "content" in item)
+            else:
+                raise ValueError(f"No 'content' field found in JSON: {path}")
+        else:
+            raise ValueError(f"Unsupported format: {suffix}")
 
     # --------- Text chunking ---------
     def _chunk_text(self, text: str) -> List[str]:
@@ -60,7 +73,7 @@ class Retriever:
         tokens = self.tokenizer.tokenize(text) #['hello', 'world', '!']
         ids = self.tokenizer.convert_tokens_to_ids(tokens) #	[7592, 2088]
 
-        # 保证 chunk_size 不超过模型最大输入限制
+        #  Make sure that chunk_size not exceed model's max length
         chunk_size = min(self.chunk_size, max_model_length)
         step = chunk_size - self.chunk_overlap
 
@@ -70,6 +83,10 @@ class Retriever:
         ]
 
         return chunks
+    # --------- Tokenization for BM25 ---------
+    def _tokenize_for_bm25(self, text: str) -> List[str]:
+        """Tokenize text using the same tokenizer as dense encoder."""
+        return self.tokenizer.tokenize(text.lower())
 
 
     # --------- Index building ---------
@@ -81,12 +98,13 @@ class Retriever:
         # Dense vectors
         vecs = self.embedder.encode(
             self.chunks, normalize_embeddings=True, convert_to_numpy=True, show_progress_bar=True
-        )
+        ) # [num_chunks, embedding_dim]
         self.index = faiss.IndexFlatIP(vecs.shape[1])
         self.index.add(vecs)
 
         # Sparse BM25
-        self.bm25 = BM25Okapi([c.lower().split() for c in self.chunks])
+        tokenized_chunks = [self._tokenize_for_bm25(c) for c in self.chunks]
+        self.bm25 = BM25Okapi(tokenized_chunks)
 
     # --------- Internal utility: reranker-safe pair truncation ---------
     def _truncate_pair(self, query: str, chunk: str, max_tokens: int = 512) -> Tuple[str, str]:
@@ -113,7 +131,8 @@ class Retriever:
         d_idx, d_scores = d_idx[0], d_scores[0]
 
         # Sparse retrieval
-        s_scores = self.bm25.get_scores(query.lower().split())
+        query_tokens = self._tokenize_for_bm25(query)
+        s_scores = self.bm25.get_scores(query_tokens)
         s_idx = sorted(range(len(s_scores)), key=s_scores.__getitem__, reverse=True)[: top_k * 4]
 
         # Score fusion
