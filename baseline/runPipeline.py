@@ -7,7 +7,12 @@ from generator.generator import Generator
 
 def main():
 
-    document_paths = FileUtil.get_all_cleaned_data_filenames()
+    data_dir = Path("D:/Model_bge_m3/Model_bge_m3/baseline/data/cleaned_json")
+    document_paths = [str(p) for p in data_dir.glob("*.json")]
+    print(f"实际加载的 document_paths: {document_paths}")
+    for p in document_paths:
+        print(Path(p).resolve(), Path(p).exists())
+
 
     # 2. Instantiate RAGPipeline
     prompt_template=("You are a helpful assistant for question-answering tasks regarding the university course details. Take the following question (the user query) and use this helpful information (the data retrieved in the similarity search) to answer it. If you don't know the answer based on the information provided, just say you don't know."

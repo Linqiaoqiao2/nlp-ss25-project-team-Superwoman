@@ -307,3 +307,134 @@
 2025-06-05 10:37:40,289 - Retriever - INFO - length of total chunks: 8
 2025-06-05 10:37:59,156 - FileUtil - INFO - Model Choosen: mistral-7b-instruct-v0.1.Q4_K_M.gguf
 2025-06-05 10:37:59,156 - Generator - INFO - Loading model from: /Users/yumengmeng/Desktop/SS25CitH/NLP Projekt/Model_bge_m3/baseline/util/../llms/mistral-7b-instruct-v0.1.Q4_K_M.gguf
+
+2025-07-01 16:29:07,257 - Team SuperWoman -Retriever - INFO - Tokenize text into overlapping chunks.
+
+2025-07-01 16:34:33,138 - Team SuperWoman -Retriever - INFO - Tokenize text into overlapping chunks.
+
+2025-07-01 16:40:05,565 - Team SuperWoman -Retriever - INFO - Tokenize text into overlapping chunks.
+
+2025-07-01 16:41:16,195 - Team SuperWoman -Retriever - INFO - Tokenize text into overlapping chunks.
+
+2025-07-01 16:41:57,613 - Team SuperWoman -Retriever - INFO - Tokenize text into overlapping chunks.
+
+2025-07-01 16:47:50,076 - Team SuperWoman -Retriever - INFO - Tokenize text into overlapping chunks.
+
+2025-07-01 16:52:52,694 - Team SuperWoman -Retriever - INFO - Tokenize text into overlapping chunks.
+
+2025-07-01 16:55:16,554 - Team SuperWoman -FileUtil - INFO - llm directory: D:\Model_bge_m3\Model_bge_m3\baseline\util\../llms
+
+2025-07-01 16:55:16,554 - Team SuperWoman -FileUtil - INFO - LLM Model Choosen: mistral-7b-instruct-v0.1.Q4_K_M.gguf
+
+2025-07-01 16:55:16,554 - Team SuperWoman -Generator - INFO - Loading model from: D:\Model_bge_m3\Model_bge_m3\baseline\util\../llms\mistral-7b-instruct-v0.1.Q4_K_M.gguf
+
+2025-07-01 17:01:04,894 - Team SuperWoman -Retriever - INFO - Retrieve top-k relevant text chunks using hybrid dense + sparse + reranker.
+
+2025-07-01 17:01:10,014 - Team SuperWoman -pipeline - INFO - Top chunks choosen
+: [('Regulations and documents Regulations for the course The following documents form the formal framework for studying in the Applied Computer Science master’s program: - The general examination regulations (APO) of the WIAI faculty. - The study and subject examination regulations (StuFPO) for the', 0.11028611660003662), ("the individual module groups are defined in Appendix 1 of the study and subject examination regulations for the degree programs. Basic modules are only not included in the final grade in the seven-semester Bachelor's degree programs. In both the six- and seven-semester bachelor's degree programs,", 0.02482016012072563)]
+
+2025-07-01 17:01:16,050 - Team SuperWoman -Generator - INFO - 
+Prompt =============: 
+Please answer the following question in English: You are a helpful assistant for question-answering tasks regarding the university course details. Take the following question (the user query) and use this helpful information (the data retrieved in the similarity search) to answer it. If you don't know the answer based on the information provided, just say you don't know.Context:
+Regulations and documents Regulations for the course The following documents form the formal framework for studying in the Applied Computer Science master’s program: - The general examination regulations (APO) of the WIAI faculty. - The study and subject examination regulations (StuFPO) for the
+the individual module groups are defined in Appendix 1 of the study and subject examination regulations for the degree programs. Basic modules are only not included in the final grade in the seven-semester Bachelor's degree programs. In both the six- and seven-semester bachelor's degree programs,
+
+Question:
+what's the study program about?
+
+Answer:
+==============
+
+2025-07-01 17:06:04,861 - Team SuperWoman -pipeline - INFO - Question: what's the study program about?
+
+2025-07-01 17:06:04,892 - Team SuperWoman -pipeline - INFO - Answer: 
+The Applied Computer Science master's program is a graduate program offered by the WIAI faculty that provides students with an in-depth understanding of computer science concepts and skills. The program emphasizes the practical application of computer science knowledge and includes both theoretical and practical coursework.
+
+2025-07-01 17:10:04,390 - Team SuperWoman -Retriever - INFO - Retrieve top-k relevant text chunks using hybrid dense + sparse + reranker.
+
+2025-07-01 17:10:09,525 - Team SuperWoman -pipeline - INFO - Top chunks choosen
+: [('s to 6 or 8 semesters, respectively. No statement of explanation is required to register for part-time studies. Changing from full-time to part-time is possible in any semester up to the end of the standard period of study of the respective full-time degree programme within the respective enrolment', 0.9827536344528198), ('of study of the respective full-time degree programme within the respective enrolment period. Changing from part-time to full-time is possible in any semester within the respective enrolment period, provided that an even number of semesters have been studied in the part-time degree programme previously attended.', 0.4021584987640381)]
+
+2025-07-01 17:10:09,672 - Team SuperWoman -Generator - INFO - 
+Prompt =============: 
+Please answer the following question in English: You are a helpful assistant for question-answering tasks regarding the university course details. Take the following question (the user query) and use this helpful information (the data retrieved in the similarity search) to answer it. If you don't know the answer based on the information provided, just say you don't know.Context:
+s to 6 or 8 semesters, respectively. No statement of explanation is required to register for part-time studies. Changing from full-time to part-time is possible in any semester up to the end of the standard period of study of the respective full-time degree programme within the respective enrolment
+of study of the respective full-time degree programme within the respective enrolment period. Changing from part-time to full-time is possible in any semester within the respective enrolment period, provided that an even number of semesters have been studied in the part-time degree programme previously attended.
+
+Question:
+How many semesters can be extended if a student chooses part-time study?
+
+Answer:
+==============
+
+2025-07-01 17:14:47,445 - Team SuperWoman -pipeline - INFO - Question: How many semesters can be extended if a student chooses part-time study?
+
+2025-07-01 17:14:47,476 - Team SuperWoman -pipeline - INFO - Answer: 
+If a student chooses part-time study, the maximum number of semesters that can be extended is 2. This means that if a student initially registers for a full-time degree programme and then decides to switch to part-time studies, they can extend their studies up to 2 additional semesters beyond the standard period of study for their respective full-time degree programme. Similarly, if a student starts studying part-time and wants to extend their studies, they can apply for an extension of up to 2 semesters, as long as they have studied an even number of semesters in the part-time degree programme previously attended.
+
+2025-07-01 18:20:49,911 - Team SuperWoman -Retriever - INFO - Tokenizing text into overlapping chunks.
+
+2025-07-01 18:29:03,835 - Team SuperWoman -Retriever - INFO - Tokenizing text into overlapping chunks.
+
+2025-07-01 18:31:08,337 - Team SuperWoman -Retriever - INFO - ✅ Finished building dense and sparse indexes with 411 chunks.
+
+2025-07-01 18:31:08,337 - Team SuperWoman -FileUtil - INFO - LLM directory: D:\Model_bge_m3\Model_bge_m3\baseline\llms
+
+2025-07-01 18:31:08,353 - Team SuperWoman -FileUtil - INFO - LLM model chosen: mistral-7b-instruct-v0.1.Q4_K_M.gguf
+
+2025-07-01 18:31:08,353 - Team SuperWoman -Generator - INFO - Loading model from: D:\Model_bge_m3\Model_bge_m3\baseline\llms\mistral-7b-instruct-v0.1.Q4_K_M.gguf
+
+2025-07-01 18:34:29,034 - Team SuperWoman -Retriever - INFO - Retrieve top-k relevant text chunks using hybrid dense + sparse + reranker.
+
+2025-07-01 18:34:35,214 - Team SuperWoman -pipeline - INFO - Top chunks choosen
+: [('s to 6 or 8 semesters, respectively. No statement of explanation is required to register for part-time studies. Changing from full-time to part-time is possible in any semester up to the end of the standard period of study of the respective full-time degree programme within the respective enrolment', 'N/A', 0.9827536344528198), ('of study of the respective full-time degree programme within the respective enrolment period. Changing from part-time to full-time is possible in any semester within the respective enrolment period, provided that an even number of semesters have been studied in the part-time degree programme previously attended.', 'N/A', 0.4021584987640381)]
+
+2025-07-01 18:34:40,855 - Team SuperWoman -Generator - INFO - 
+Prompt =============: 
+Please answer the following question in English: You are a helpful assistant for question-answering tasks regarding the university course details. Take the following question (the user query) and use this helpful information (the data retrieved in the similarity search) to answer it. If you don't know the answer based on the information provided, just say you don't know.Context:
+s to 6 or 8 semesters, respectively. No statement of explanation is required to register for part-time studies. Changing from full-time to part-time is possible in any semester up to the end of the standard period of study of the respective full-time degree programme within the respective enrolment
+of study of the respective full-time degree programme within the respective enrolment period. Changing from part-time to full-time is possible in any semester within the respective enrolment period, provided that an even number of semesters have been studied in the part-time degree programme previously attended.
+
+Question:
+How many semesters can be extended if a student chooses part-time study?
+
+Answer:
+==============
+
+2025-07-01 18:36:07,262 - Team SuperWoman -pipeline - INFO - Question: How many semesters can be extended if a student chooses part-time study?
+
+2025-07-01 18:36:07,299 - Team SuperWoman -pipeline - INFO - Answer: If a student chooses part-time study, the number of semesters that can be extended is 4.
+
+2025-07-01 18:43:33,344 - Team SuperWoman -Retriever - INFO - Tokenizing text into overlapping chunks.
+
+2025-07-01 18:45:48,220 - Team SuperWoman -Retriever - INFO - ✅ Finished building dense and sparse indexes with 411 chunks.
+
+2025-07-01 18:45:48,228 - Team SuperWoman -FileUtil - INFO - LLM directory: D:\Model_bge_m3\Model_bge_m3\baseline\llms
+
+2025-07-01 18:45:48,228 - Team SuperWoman -FileUtil - INFO - LLM model chosen: mistral-7b-instruct-v0.1.Q4_K_M.gguf
+
+2025-07-01 18:45:48,228 - Team SuperWoman -Generator - INFO - Loading model from: D:\Model_bge_m3\Model_bge_m3\baseline\llms\mistral-7b-instruct-v0.1.Q4_K_M.gguf
+
+2025-07-01 18:57:29,977 - Team SuperWoman -Retriever - INFO - Retrieve top-k relevant text chunks using hybrid dense + sparse + reranker.
+
+2025-07-01 18:57:43,011 - Team SuperWoman -pipeline - INFO - Top chunks choosen
+: [('Qualification goals of the M.Sc. Applied computer science Upon completion of the programme, students will have achieved the following qualification goals. Scientific aptitude and ability to engage in qualified gainful employment: Graduates - have demonstrated in the context of exercises and projects that they have mastered methods', 'N/A', 0.713405430316925), (". One of the strengths of our graduates is their particularly broad training in the methods of applied computer science. To start your career after completing your master’s degree, you can fall back on the network of the WIAI faculty. You may have already done your master's thesis in cooperation", 'https://www.uni-bamberg.de/en/ma-ai/career-prospects/', 0.5966753959655762)]
+
+2025-07-01 18:57:50,848 - Team SuperWoman -Generator - INFO - 
+Prompt =============: 
+Please answer the following question in English: You are a helpful assistant for question-answering tasks regarding the university course details. Take the following question (the user query) and use this helpful information (the data retrieved in the similarity search) to answer it. If you don't know the answer based on the information provided, just say you don't know.Context:
+Qualification goals of the M.Sc. Applied computer science Upon completion of the programme, students will have achieved the following qualification goals. Scientific aptitude and ability to engage in qualified gainful employment: Graduates - have demonstrated in the context of exercises and projects that they have mastered methods
+. One of the strengths of our graduates is their particularly broad training in the methods of applied computer science. To start your career after completing your master’s degree, you can fall back on the network of the WIAI faculty. You may have already done your master's thesis in cooperation
+
+Question:
+What career opportunities do I have after finishing M.Sc. Applied Computer Science?
+
+Answer:
+==============
+
+2025-07-01 19:07:30,738 - Team SuperWoman -pipeline - INFO - Question: What career opportunities do I have after finishing M.Sc. Applied Computer Science?
+
+2025-07-01 19:07:30,774 - Team SuperWoman -pipeline - INFO - Answer: After completing M.Sc. Applied Computer Science, you can consider various career opportunities in the field of computer science such as software development, data analysis, systems administration, information security, and project management. Additionally, with the network of the WIAI faculty, graduates may also have the opportunity to work in related fields or industries.
+
+Sources:
+- https://www.uni-bamberg.de/en/ma-ai/career-prospects/
