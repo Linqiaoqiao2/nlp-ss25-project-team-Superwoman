@@ -58,7 +58,7 @@ class Generator:
     def generate_answer(
         self,
         query: str,
-        context_chunks: List[Union[str, Tuple[Any, float]]],
+        context_chunks: List[Tuple[str, str, float]],  # text, url, score
         prompt_template: str,
         previous_conversation: str = ""
     ) -> str:
@@ -66,26 +66,23 @@ class Generator:
         max_context_tokens = 850
         prompt_chunks: List[str] = []
         token_count = 0
-        
-        context = "\n".join(prompt_chunks)
+        sources = set()
 
         for chunk in context_chunks:
-            text = self._extract_text(chunk)
-            words = text.split()  # Approximate token count
+            text = self._extract_text(chunk[0])   # text
+            url = chunk[1]                        # url
+            words = text.split()
 
             if token_count + len(words) > max_context_tokens:
-                print(f"\ntotal count of words: {len(token_count)}")
                 break
 
             prompt_chunks.append(text)
             token_count += len(words)
-
-        print(f"\n============context counts: {len(context_chunks)}")
+            sources.add(url)
 
         context = "\n".join(prompt_chunks)
         prompt = prompt_template.format(context=context, query=query)
-        print("\n\nprevious_conversation summary:", previous_conversation)
-        # Language detection
+
         try:
             language = detect(query)
             if language == 'de':
@@ -98,9 +95,19 @@ class Generator:
         except Exception as e:
             logger.warning(f"Language detection failed: {e}")
             return ""
+
         logger.info(f"\nPrompt =============: {prompt}\n==============")
-        return self.llm.invoke(prompt, max_tokens=506)
-    
+        answer = self.llm.invoke(prompt, max_tokens=506)
+
+        # Assemble citation sources
+        sources_text = "\n".join(f"- {url}" for url in sources if url != "N/A")
+        if sources_text:
+            final_answer = f"{answer.strip()}\n\nSources:\n{sources_text}"
+        else:
+            final_answer = answer.strip()
+
+        return final_answer
+
 
     def summarize_chat_history(self, chat_history, max_tokens=100):
         prompt = f"You are a university chat assitant. Give me a context the following chat:\n\n{chat_history}\n\nSummary:"
