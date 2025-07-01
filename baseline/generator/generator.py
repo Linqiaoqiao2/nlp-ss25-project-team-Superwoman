@@ -20,7 +20,7 @@ class Generator:
     retrieved context and returns an answer. Supports DE/EN language detection.
     """
 
-    def __init__(self, file_path: str) -> None:
+    def __init__(self, file_path: str, max_tokens= 1024) -> None:
         try:
             logger.info(f"Loading model from: {file_path}")
 
@@ -29,7 +29,7 @@ class Generator:
                 use_mmap=False,
                 n_gpu_layers=0,
                 n_batch=64,
-                n_ctx=1024,  # Must match max_context_tokens
+                n_ctx=max_tokens,  # Must match max_context_tokens
                 n_threads=4,
                 f16_kv=True,
                 callbacks=[StreamingStdOutCallbackHandler()],
@@ -63,37 +63,46 @@ class Generator:
         previous_conversation: str = ""
     ) -> str:
         query = self.clean_query(query)
-        max_context_tokens = 1024
+        max_context_tokens = 850
         prompt_chunks: List[str] = []
         token_count = 0
+        
+        context = "\n".join(prompt_chunks)
 
         for chunk in context_chunks:
             text = self._extract_text(chunk)
             words = text.split()  # Approximate token count
 
             if token_count + len(words) > max_context_tokens:
+                print(f"\ntotal count of words: {len(token_count)}")
                 break
 
             prompt_chunks.append(text)
             token_count += len(words)
 
+        print(f"\n============context counts: {len(context_chunks)}")
+
         context = "\n".join(prompt_chunks)
         prompt = prompt_template.format(context=context, query=query)
-        
+        print("\n\nprevious_conversation summary:", previous_conversation)
         # Language detection
         try:
             language = detect(query)
             if language == 'de':
-                prompt = f"{previous_conversation}\nBitte beantworte die folgende Frage auf Deutsch: {prompt}"
+                prompt = f"\nBitte beantworte die folgende Frage auf Deutsch: {prompt}"
             elif language == 'en':
-                prompt = f"{previous_conversation}\nPlease answer the following question in English: {prompt}"
+                prompt = f"\nPlease answer the following question in English: {prompt}"
             else:
                 logger.warning("Unsupported language detected. Defaulting to English.")
-                prompt = f"{previous_conversation}\nPlease answer the following question in English: {prompt}"
+                prompt = f"\nPlease answer the following question in English: {prompt}"
         except Exception as e:
             logger.warning(f"Language detection failed: {e}")
             return ""
-        
-        logger.info(f"[Generator] Prompt approx. length: {token_count} tokens")
+        logger.info(f"\nPrompt =============: {prompt}\n==============")
+        return self.llm.invoke(prompt, max_tokens=506)
+    
 
-        return self.llm.invoke(prompt)
+    def summarize_chat_history(self, chat_history, max_tokens=100):
+        prompt = f"You are a university chat assitant. Give me a context the following chat:\n\n{chat_history}\n\nSummary:"
+        summary = self.llm.invoke(prompt, max_tokens=max_tokens)
+        return summary
