@@ -1,9 +1,11 @@
 import os
+import sys
+
 from pathlib import Path
 from sentence_transformers import SentenceTransformer, util
-from baseline.pipeline import RAGPipeline
 from tqdm import tqdm
-import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from pipeline import RAGPipeline
 from pathlib import Path
 
 
@@ -20,7 +22,7 @@ cleaned_dirs = [p for p in data_dir.iterdir() if p.is_dir() and p.name.startswit
 if not cleaned_dirs:
     raise FileNotFoundError(f"No folder starting with 'cleaned_' found in {data_dir}")
 cleaned_dir = cleaned_dirs[0]
-allowed_suffixes = {".txt", ".md", ".pdf"}
+allowed_suffixes = {".txt", ".md", ".pdf", ".json"}
 
 document_paths = [
     f.as_posix()

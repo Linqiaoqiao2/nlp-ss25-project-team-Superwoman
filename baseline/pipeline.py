@@ -16,7 +16,7 @@ class RAGPipeline:
         self.generator = Generator(file_path=model_path)
         self.prompt_template = prompt_template
 
-    def run_chatbot(self, query: str, top_k: int = 3, previous_conversation: str = "") -> str:
+    def run_rag(self, query: str, top_k: int = 3, previous_conversation: str = "") -> str:
         while (True):
             # query = input("\nPlease type your question: ")
             top_chunks = self.retriever.query(query, top_k=2)

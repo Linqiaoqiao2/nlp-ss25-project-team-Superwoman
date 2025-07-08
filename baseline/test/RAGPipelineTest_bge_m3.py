@@ -2,13 +2,18 @@ import os
 import sys
 import unittest
 from pathlib import Path
+from collections import Counter
 
 # Make project root importable
 sys.path.append(Path(__file__).resolve().parent.parent.as_posix())
 
+from util.logger_config import setup_logger
 from retriever.retriever_bge_m3 import Retriever
 from pipeline import RAGPipeline
 
+from util.fileUtil import FileUtil
+
+logger = setup_logger("Retriever", log_file="logs/RAGPipeline.log")
 
 class TestGenerator(unittest.TestCase):
     """
@@ -30,12 +35,15 @@ class TestGenerator(unittest.TestCase):
         
         cleaned_dir = cleaned_dirs[0]
 
-        allowed_suffixes = {".txt", ".md", ".pdf"}
+        allowed_suffixes = {".txt", ".md", ".pdf", ".json"}
         document_paths = [
             f.as_posix()
             for f in cleaned_dir.rglob("*")
             if f.is_file() and f.suffix.lower() in allowed_suffixes
         ]
+
+        logger.info(f"✅ doc length {len(document_paths)} .")
+        logger.info(f"✅ doc length {document_paths} .")
 
         cls.pipeline = RAGPipeline(
             document_paths=document_paths,
@@ -64,7 +72,7 @@ class TestGenerator(unittest.TestCase):
         summary = ""
         with questions_file.open("r", encoding="utf-8") as qf:
             for query in qf:
-                answer = self.pipeline.run_chatbot(query, previous_conversation=summary)
+                answer = self.pipeline.run_rag(query, previous_conversation=summary)
                 if not query.strip():
                     continue 
                 print("Q:", query.strip())

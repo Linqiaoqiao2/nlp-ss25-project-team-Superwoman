@@ -24,7 +24,7 @@ def main():
 
     # Define a wrapper for the chatbot interaction
     def chatbot_response(message, history, summary=""):
-        response = pipeline.run_chatbot(message)  # your existing logic
+        response = pipeline.run_rag(message)
         history.append((message, response))
         new_qa = f"User: {message}\nBot: {response}"
         summary = pipeline.getChatSummary(summary+new_qa)
