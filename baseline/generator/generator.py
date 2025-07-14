@@ -71,7 +71,12 @@ class Generator:
         for chunk in context_chunks:
             text = self._extract_text(chunk[0])   # text
             url = chunk[1]                        # url
+            score = chunk[2]                      # score
             words = text.split()
+
+             # Check if the score is below 0.05
+            if score < 0.05:
+                continue  # Skip this chunk
 
             if token_count + len(words) > max_context_tokens:
                 break
@@ -81,6 +86,11 @@ class Generator:
             sources.add(url)
 
         context = "\n".join(prompt_chunks)
+
+        # Check if context is empty
+        if not context.strip():
+            return "I don't know."
+    
         prompt = prompt_template.format(context=context, query=query)
 
         try:
@@ -98,6 +108,10 @@ class Generator:
 
         logger.info(f"\nPrompt =============: {prompt}\n==============")
         answer = self.llm.invoke(prompt, max_tokens=506)
+
+        # Check if the answer is empty
+        if not answer.strip():
+            return "I don't know."
 
         # Assemble citation sources
         sources_text = "\n".join(f"- {url}" for url in sources if url != "N/A")
