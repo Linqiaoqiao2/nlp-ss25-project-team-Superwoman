@@ -8,8 +8,6 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from pipeline import RAGPipeline
 from pathlib import Path
 
-
-
 embedder = SentenceTransformer("BAAI/bge-m3")
 
 base_dir = Path(__file__).resolve().parent.parent

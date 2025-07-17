@@ -8,13 +8,13 @@ from urllib.parse import urljoin, urlparse
 from datetime import datetime
 from tqdm import tqdm
 
-# 仅抓取以下前缀范围
+# Only scrape pages with the following prefixes
 PREFIXES = [
     "https://www.uni-bamberg.de/ma-ai/",
     "https://www.uni-bamberg.de/en/ma-ai/"
 ]
 
-# 存储位置
+# Storage directories
 date_str = datetime.today().strftime("%Y-%m-%d")
 os.makedirs("cleaned_json", exist_ok=True)
 os.makedirs("pdfs", exist_ok=True)
@@ -28,7 +28,7 @@ def fetch_html(url):
         resp.raise_for_status()
         return resp.text
     except Exception as e:
-        print(f"❌ 无法抓取 {url}: {e}")
+        print(f"❌ Failed to fetch {url}: {e}")
         return None
 
 def clean_and_save_text(url, html):
@@ -47,9 +47,9 @@ def clean_and_save_text(url, html):
         filename = f"cleaned_json/{safe_title}_{date_str}.json"
         with open(filename, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
-        print(f"✅ 已保存: {filename}")
+        print(f"✅ Saved: {filename}")
     else:
-        print(f"⚠️ 内容过短或无法清洗: {url}")
+        print(f"⚠️ Content too short or failed to clean: {url}")
 
 def extract_links(html, base_url):
     soup = BeautifulSoup(html, "html.parser")
@@ -73,9 +73,9 @@ def download_pdf(url):
         filename = re.sub(r'[\\/*?:"<>|]', "", filename)
         with open(os.path.join("pdfs", filename), "wb") as f:
             f.write(response.content)
-        print(f"📥 已下载 PDF: {filename}")
+        print(f"📥 Downloaded PDF: {filename}")
     except Exception as e:
-        print(f"❌ 无法下载 PDF {url}: {e}")
+        print(f"❌ Failed to download PDF {url}: {e}")
 
 if __name__ == "__main__":
     while to_visit:
@@ -92,4 +92,4 @@ if __name__ == "__main__":
             for pdf_url in pdf_links:
                 download_pdf(pdf_url)
 
-    print("✅ 已完成 Bamberg MA-AI 专业页面及子页面文本和 PDF 抓取。")
+    print("✅ Completed scraping texts and PDFs from Bamberg MA-AI program pages and subpages.")
