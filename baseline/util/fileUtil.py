@@ -76,7 +76,7 @@ class FileUtil:
             "Contact_Persons": "https://www.uni-bamberg.de/en/ma-ai/contact-persons/",
             "FAQ": "https://www.uni-bamberg.de/en/ma-ai/faq/",
             "Regulations_and_documents": "https://www.uni-bamberg.de/en/ma-ai/regulations-and-documents/",
-            "Structure_and_Curriculum": "https://www.uni-bamberg.de/en/ma-ai/structure-and-curriculum/",
+            "Structure_and_Curriculum": "https://www.uni-bamberg.de/en/ma-ai/structure/",
         }
         for key in mapping:
             if key.lower() in path.lower():
