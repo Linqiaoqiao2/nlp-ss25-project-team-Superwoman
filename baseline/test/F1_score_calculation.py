@@ -51,11 +51,13 @@ class TestRagOutput:
         cls.output_file.write_text("=== Summarization f1 score Output ===\n\n", encoding="utf-8")
 
     @classmethod
-    def _write_output(cls, query: str, answer: str, generatedAns: str, score: float) -> None:
+    def _write_output(cls, query: str, answer: str, generatedAns: str, score: float,precision: float, reacall: float) -> None:
         with cls.output_file.open("a", encoding="utf-8") as f:
             f.write(f"***Query: {query.strip()}\n")
             f.write(f"***Answer: {answer.strip()}\n")
             f.write(f"***Generated Answer: {generatedAns.strip()}\n")
+            f.write(f"***precision: {precision:.4f}\n")
+            f.write(f"***reacall: {reacall:.4f}\n")
             f.write(f"***F1 Score: {score:.4f}\n")
             f.write("-" * 40 + "\n")
 
@@ -88,7 +90,7 @@ class TestRagOutput:
                 recall = num_same / len(gt_tokens)
                 score = 2 * precision * recall / (precision + recall)
 
-            cls._write_output(question,ground_truth, answer, score)
+            cls._write_output(question,ground_truth, answer, score, precision, recall)
 
 
 if __name__ == "__main__":

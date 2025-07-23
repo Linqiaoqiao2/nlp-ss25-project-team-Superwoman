@@ -1,2 +1,202 @@
 === Summarization f1 score Output ===
 
+***Query: How many credits do I need to finish the master’s in Applied Computer Science at Bamberg?
+***Answer: To complete the master's in Applied Computer Science at Bamberg, 120 ECTS credits required.
+***Generated Answer: To complete the master's in Applied Computer Science at Bamberg, you need a minimum of 120 credits.
+
+Sources:
+- https://www.uni-bamberg.de/en/ma-ai/application-and-admission/
+- https://www.uni-bamberg.de/en/ma-ai/structure-and-curriculum/
+***precision: 0.5000
+***reacall: 0.7857
+***F1 Score: 0.6111
+----------------------------------------
+***Query: What are the main parts of the programme?
+***Answer: The master’s degree programme comprises the six module groups outlined below.Particular importance is placed on guided individual studies represented by at least two master’s seminars, up to two research-oriented projects—each with 15 ECTS credit points—and a master’s thesis comprising 30 ECTS credit points.
+***Generated Answer: The M. Sc. programme in Applied Computer Science is divided into several main parts:
+1. Foundation modules: These modules provide the students with a solid understanding of the fundamentals of computer science and information technology.
+2. Theoretical modules: These modules provide students with advanced knowledge of specific areas of computer science and information technology.
+3. Practicum projects: These modules allow students to apply their knowledge and skills to real-world projects.
+4. Master's thesis: This module provides students with an opportunity to conduct original research and develop their critical thinking and problem-solving skills.
+***precision: 0.0870
+***reacall: 0.1860
+***F1 Score: 0.1185
+----------------------------------------
+***Query: What projects and seminars are required in the programme, and how many credits do these projects have?
+***Answer: In this module group, a Master's project (15 ECTS) in Applied Computer Science must be completed. A further Master's project (15 ECTS) in the field of Applied Computer Science or one or two projects (6 ECTS each) in Applied Computer Science or Computer Science are optional. In the module group A5, students complete two to three seminars, each including an oral presentation and a term paper. At least two seminars are from the fields of Applied Computer Science, and one optional third seminar can be from Computer Science and Information Systems.
+***Generated Answer: The required projects and seminars in the program are as follows: 
+- Module Group A5: Two to three seminars, each including an oral presentation and a term paper. At least two credits.
+- Module Group B1: One research-oriented project - Each with 15 ECTS credit points - In the field of Computer Science or one in Applied Computer Science.
+- Module Group C2: One further Master's project - Each with 15 ECTS credit points - In the field of Applied Computer Science or one in Computer Science. 
+
+Based on this information, we can answer your question: There are two projects and two seminars required in the programme, each with 15 ECTS credit points, for a total of 30 ECTS credits.
+
+Sources:
+- https://www.uni-bamberg.de/en/ma-ai/structure-and-curriculum/
+***precision: 0.4634
+***reacall: 0.6264
+***F1 Score: 0.5327
+----------------------------------------
+***Query: Who is the subject advisor for the Applied Computer Science Master’s programme at Bamberg?
+***Answer: Moritz Maleck
+***Generated Answer: The subject advisor for the Applied Computer Science Master's programme at Bamberg is Moritz Maleck. He can be reached at Moritz.Maleck@uni-bamberg.de or phone: +49 96047 82188.
+
+Sources:
+- https://www.uni-bamberg.de/en/ma-ai/application-and-admission/
+- https://www.uni-bamberg.de/en/ma-ai/contact-persons/
+***precision: 0.0323
+***reacall: 0.5000
+***F1 Score: 0.0606
+----------------------------------------
+***Query: What is Moritz Maleck’s phone number?
+***Answer: Tel.: +49 951 863-3942
+***Generated Answer: Based on the information provided, it is not possible to determine Moritz Maleck's phone number.
+
+Sources:
+- https://www.uni-bamberg.de/en/ma-ai/contact-persons/
+***precision: 0.0323
+***reacall: 0.5000
+***F1 Score: 0.0000
+----------------------------------------
+***Query: Who is the subject advisor for the Applied Computer Science Master’s programme at Bamberg, and what is his office room number?
+***Answer: Moritz Maleck WE5/01.034
+***Generated Answer: The subject advisor for the Applied Computer Science Master’s programme at Bamberg is Moritz Maleck, and his office room number is WE5/01.034.
+
+Sources:
+- https://www.uni-bamberg.de/en/ma-ai/application-and-admission/
+- https://www.uni-bamberg.de/en/ma-ai/contact-persons/
+***precision: 0.0370
+***reacall: 0.3333
+***F1 Score: 0.0667
+----------------------------------------
+***Query: Can the master’s programme in Applied Computer Science at Bamberg be studied part-time?
+***Answer: All degree programmes offered by the faculty of Information Systems and Applied Computer Sciences (WIAI) can be studied as part-time courses.
+***Generated Answer: Based on the information retrieved from the similarity search, it is not possible to determine whether the master’s programme in Applied Computer Science at Bamberg can be studied part-time. Therefore, the answer would have to be "I don't know" or "There is no information available in the similarity search."
+***precision: 0.1429
+***reacall: 0.3333
+***F1 Score: 0.2000
+----------------------------------------
+***Query: How long is the master’s programme extended when studied part-time?
+***Answer: The duration of master’s degree programmes is extended from 3 or 4 semesters to 6 or 8 semesters, respectively.
+***Generated Answer: The master's programme is extended from 3 or 4 semesters to 6 or 8 semesters, respectively. Therefore, the master's programme is extended for a total of 12 or 14 semesters when studied part-time.
+***precision: 0.4545
+***reacall: 0.7895
+***F1 Score: 0.5769
+----------------------------------------
+***Query: Who can do part-time studies at Bamberg？How many courses would I need to take each semester, and do I still have to pay the full fees?
+***Answer: Who can benefit: Particularly for students with children, part-time employment or students with disabilities or chronic illness, part-time studies afford the opportunity to reduce these students’ academic work load during the semester and extend the allotted duration of a particular degree programme. Course load adjustment: The required academic course load per semester is accordingly reduced by half. Semester fees: Students are obliged to pay the complete fees (the so-called ‘Semesterbeitrag’, which consists of a contribution to the student union and the fees for a semester public transport ticket).
+***Generated Answer: Part-time Studies at Bamberg can be done by anyone who has completed the part-time degree programme previously attended. To calculate the required academic course load per semester, you need to divide the number of credits by 2. This means that you would need to take 1/2 as many courses each semester and pay the full semester fees. However, if you have children, part-time employment or disabilities or chronic illness, you may be eligible for reduced course loads, but this is determined on a case-by-case basis by the faculty and may result in slightly fewer courses being taken per semester. It's important to note that students are obliged to pay the complete fees, which consists of a contribution to the student union.
+***precision: 0.4132
+***reacall: 0.5682
+***F1 Score: 0.4785
+----------------------------------------
+***Query: What is required for admission to the master’s programme in Applied Computer Science at Bamberg?
+***Answer: Admission to the master’s degree programme in Applied Computer Science requires that a student have completed a university or equivalent degree in the same major, or a closely related one, with a grade average of the German 2,7 or better.
+***Generated Answer: To be admitted to the master's programme in Applied Computer Science at Bamberg, you need to have a completed university or equivalent degree in a closely related computer science major with a grade average of at least 2,7 or better. Additionally, you must be able to demonstrate proficiency in English language.
+
+Sources:
+- https://www.uni-bamberg.de/en/ma-ai/application-and-admission/
+***precision: 0.4815
+***reacall: 0.6500
+***F1 Score: 0.5532
+----------------------------------------
+***Query: What is the recommended application deadline for studies beginning in the winter semester?
+***Answer: Recommended application deadline: no later than 15th of September.
+***Generated Answer: The recommended application deadline for studies beginning in the winter semester is no later than 15th of September.
+
+Sources:
+- https://www.uni-bamberg.de/en/ma-ai/application-and-admission/
+- https://www.uni-bamberg.de/en/ma-ai/faq/
+***precision: 0.3478
+***reacall: 0.8889
+***F1 Score: 0.5000
+----------------------------------------
+***Query: What documents do I need to apply, where do I send them if I’m an international student, and what level of German do I need?
+***Answer: Required documents: Your completed application must include the following documentation: Certification of successful completion of the examination for general or restricted university entry qualification. Certification of a completed university degree qualifying for entrance to the master’s degree programme. If the degree certificate is not yet available and your qualifying degree is conferred by a German university, you may turn in the certificate later; admission will then be conditional. Documentation of modules, courses and examinations completed within the scope of your qualifying university degree (e.g. a transcript of records). For foreign applicants: Certificates giving proof of your German language proficiency, at least of level B2, along with a copy of your identity card or passport. Where applicable: professional credentials/references, certificates from professional and continuing educational programmes, awards/honours or voluntary service. Where to send (foreign applicants): If you obtained your Bachelor's degree in a foreign university, please send your application to the Registrar's Office via post: Otto-Friedrich-Universität Bamberg, Studierendenkanzlei, Kapuzinerstr. 25, 96049 Bamberg. German language level: Certificates giving proof of your German language proficiency, at least of level B2.
+***Generated Answer: To apply for admission to the university, you will need to complete the Office of the Registrar’s Online Application for Admission. If you are an international student, you will need to provide the following documents: 
+- Copy of your identity card or passport - Where applicable: professional credentials/ references, certificates from professional and continuing educational programmes, awards/ honours or voluntary service. Please complete the Office of the Registrar’s Online Application for Admission. Where do I upload or send them if I'm an international student?
+
+Sources:
+- https://www.uni-bamberg.de/en/ma-ai/application-and-admission/
+***precision: 0.5632
+***reacall: 0.2768
+***F1 Score: 0.3712
+----------------------------------------
+***Query: What can I do after this master’s programme?
+***Answer: The degree ‘Master of Science in Applied Computer Science’ enables you to work in all phases of system and software development.
+***Generated Answer: After completing the master’s programme, you can choose to continue your studies by pursuing a Ph.D. or pursue a career in industry. You may also be eligible for a research assistantship or job in academia. However, it ultimately depends on your interests and goals.
+
+Sources:
+- https://www.uni-bamberg.de/en/ma-ai/faq/
+***precision: 0.1277
+***reacall: 0.2857
+***F1 Score: 0.1765
+----------------------------------------
+***Query: Where can graduates work and in which fields?
+***Answer: Typical fields of activity are private companies and public institutions with their increasing tasks in document and content management, the media industry of traditional and electronic media, tourism and leisure, and the cultural area with museums and archives through to monument preservation.
+***Generated Answer: Graduates of the Master of Science in Applied Computer Science can work in various fields of computer science. They can work as software developers, system analysts or designers, or in other roles related to information systems such as project managers, technical writers, or trainers. Additionally, they can work in a variety of industries such as finance, healthcare, education, and manufacturing.
+
+Sources:
+- https://www.uni-bamberg.de/en/ma-ai/career-prospects/
+***precision: 0.1111
+***reacall: 0.1667
+***F1 Score: 0.1333
+----------------------------------------
+***Query: Does the University of Bamberg offer scholarships for art history students?
+***Answer: This question is not related to the master’s programme in Applied Computer Science.
+***Generated Answer: Unfortunately, there is no information in the provided data to suggest that the University of Bamberg offers scholarships for art history students. If you have any further questions, please feel free to ask.
+
+Sources:
+- https://www.uni-bamberg.de/en/ma-ai/faq/
+***precision: 0.1111
+***reacall: 0.3077
+***F1 Score: 0.1633
+----------------------------------------
+***Query: I want to apply for the master’s in Applied Computer Science at Bamberg. How many credits do I need to finish it?
+***Answer: 120 ECTS credits.
+***Generated Answer: The number of credits required to complete the master's in applied computer science at Bamberg can vary depending on the student's schedule. However, according to the information provided, students typically require around 30 ECTS credit points for completing the master’s thesis comprising 30 ECTS credit points.
+
+Sources:
+- https://www.uni-bamberg.de/en/ma-ai/structure-and-curriculum/
+***precision: 0.0204
+***reacall: 0.3333
+***F1 Score: 0.0385
+----------------------------------------
+***Query: I want to apply for the master’s in Applied Computer Science at Bamberg. What are the main parts of this program?
+***Answer: The master’s degree programme comprises the six module groups outlined below. Particular importance is placed on guided individual studies represented by at least two master’s seminars, up to two research-oriented projects—each with 15 ECTS credit points—and a master’s thesis comprising 30 ECTS credit points.
+***Generated Answer: The main parts of the master's in Applied Computer Science at the University of Bamberg include information systems, bioinformatics, medical informatics and computational engineering.
+
+Sources:
+- https://www.uni-bamberg.de/en/ma-ai/profile/
+***precision: 0.1111
+***reacall: 0.0682
+***F1 Score: 0.0845
+----------------------------------------
+***Query: I have some questions about the Applied Computer Science Master’s programme to consult. Who is the subject advisor for the Applied Computer Science Master’s programme at Bamberg?
+***Answer: Moritz Maleck
+***Generated Answer: The subject advisor for the Applied Computer Science Master’s programme at Bamberg is Prof. Dr. Moritz Maleck. You can contact him by phone at Moritz Maleck Room WE5/01.034 An der Weberei 5, University of Bamberg, Studierendenkanzlei, Kapuzinerstr. 25, 96049 Bamberg or by email at moritz.maleck@uni-bamberg.de.
+
+Sources:
+- https://www.uni-bamberg.de/en/ma-ai/application-and-admission/
+- https://www.uni-bamberg.de/en/ma-ai/contact-persons/
+***precision: 0.0400
+***reacall: 1.0000
+***F1 Score: 0.0769
+----------------------------------------
+***Query: I want to call Moritz Maleck to ask application questions in detail.  What is his phone number?
+***Answer: Tel.: +49 951 863-3942
+***Generated Answer: Moritz Maleck can be contacted at +49 96047 55812.
+
+Sources:
+- https://www.uni-bamberg.de/en/ma-ai/contact-persons/
+***precision: 0.0833
+***reacall: 0.2500
+***F1 Score: 0.1250
+----------------------------------------
+***Query: I am currently woking in a company and want to continue my work there. Can the master’s programme in Applied Computer Science at Bamberg be studied part-time?
+***Answer: All degree programmes offered by the faculty of Information Systems and Applied Computer Sciences (WIAI) can be studied as part-time courses.
+***Generated Answer: Yes, the master's degree in Applied Computer Science at the University of Bamberg can be studied part-time. Therefore, you can continue working in a company while pursuing your studies.
+***precision: 0.2759
+***reacall: 0.3810
+***F1 Score: 0.3200
+----------------------------------------
