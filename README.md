@@ -1,49 +1,76 @@
 # RAG Project - Summer Semester 2025
 
-> **Retrieval-Augmented Generation** baseline implementation and roadmap for ongoing development.
+> **🎓 University Course Chatbot – RAG-Based QA System** 
 
 ---
 
 ## Overview
 
-This repository hosts the code for a semester-long project on building and experimenting with Retrieval-Augmented Generation (RAG) systems. Currently under active development.
+This repository hosts the code for a semester-long project on building and experimenting with Retrieval-Augmented Generation (RAG) systems. A chatbot designed to answer university course-related queries using website information and open-source language models.
+
 ---
 
 ## Folder Structure
 <pre> 
+
 baseline/
-.
 ├── data
-│   ├── ** your data goes here **
+│   ├── cleaned_json
+│   │   └── *** All cleaned data in json format from university website**
+│   │   
+│   └── pdfs
+│       └── *** Website data in .pdf format is placed here ***
+├── evaluation
+│   └── evaluation_unsupervised.py
 ├── generator
-│   └── generator.py
+│   └── generator.py
 ├── llms
-│   ├── README.MD
-│   └── ** your model goes here **
+│   ├── Place the suitable LLM model here (Dowloadable from https://raw.githubusercontent.com/nomic-ai/gpt4all/main/gpt4all-chat/metadata/models2.json)
+│   └── README.MD
 ├── logs
-│   └── retriever.log
-├── runPipeline.py
+│   └── RAGPipeline.log
+├── pipeline.py
+├── requirements.txt
 ├── retriever
-│   └── retriever.py
+│   └── retriever_bge_m3.py
+├── runPipeline.py
 ├── test
-│   ├── input
-|   |   └── questions.txt
-│   ├── outputs
-|   |   └── answers.txt
-│   ├── RAGPipelineTest_bge_m3.py
-│   └── test_retriever.py
+│   ├── F1_score_calculation.py
+│   ├── input
+│   │   ├── f1_qa_input.json
+|   |   ├── bert_qa_input.json
+│   │   └── questions.txt
+│   ├── outputs
+│   │   ├── answers.txt
+│   │   └── f1_output.txt
+│   ├── RAGPipelineTest_bge_m3.py
+│   └── test_retriever.py
 └── util
     ├── fileUtil.py
     └── logger_config.py
 
 
+
 </pre>
-## Steps to run from the `baseline` folder
- 1. **To run chatbot:** python runPipeline.py  
- 2. **To run the RAGPipeline with test data/questions:** python test/RAGPipelineTest_bge_m3.py
- 3. **To test with new question, add your question to:** test/input/questions.txt
- 4. **Output file:** test/output/answers.txt
- 5. **LLMS can be download based on the use case and placed in the llms folder:**  https://raw.githubusercontent.com/nomic-ai/gpt4all/main/gpt4all-chat/metadata/models2.json
+## Steps to setup and run from the `baseline` folder
+ 1. **Make sure your are currently inside the /baseline folder**
+ 2. **LLMS can be download based on the your preference and placed in the llms folder:**  https://raw.githubusercontent.com/nomic-ai/gpt4all/main/gpt4all-chat/metadata/models2.json
+ 3. **To install the required packages:** Run the below commands in the terminal to install the requiered package
+                ```bash
+                    conda env create -f environment.yml
+                    conda activate rag-bot-test
+                 ```
+ 
+ 4. **To run the chatbot:** python runPipeline.py
+ 5. **To access the chatbot UI:** Access the url that is displayed once the server starts. Eg: http://127.0.0.1:xxxx
+
+
+## Steps to setup and run testcases
+ 1. **Make sure your are currently inside the /baseline folder**
+ 2. **To test with new question, add your question to:** test/input/questions.txt
+ 3. **To run the RAGPipeline with test data/questions:** python test/RAGPipelineTest_bge_m3.py
+ 5. **Output file:** test/output/answers.txt
+ 
  
 ---
 
@@ -89,40 +116,6 @@ The `Retriever` class in `retriever.py` provides end-to-end semantic search over
 
 ## Usage Instructions
 
-```bash
-# 1. Install dependencies
-pip install sentence-transformers faiss-cpu pymupdf transformers
-
-# 2. Load documents and build index
-python - <<EOF
-from retriever import Retriever
-
-r = Retriever(
-    embedding_model="all-MiniLM-L6-v2",
-    chunk_size=500,
-    overlap=100
-)
-r.add_documents([
-    "docs/example.txt",
-    "docs/ai_human.md"
-])
-EOF
-
-# 3. Run a query
-python - <<EOF
-results = r.query("Can AI think like humans?", top_k=3)
-for res in results:
-    print(res)
-EOF
-
-# 4. Save or load the FAISS index
-python - <<EOF
-r.save("my_index")   # Save to disk
-r.load("my_index")   # Load from disk
-EOF
-```
-
----
 
 ## Generator Module
 
@@ -142,42 +135,6 @@ The `Generator` class in `generator.py` utilizes a local LlamaCpp model for gene
 
 ## Usage Instructions
 
-```bash
-
-# 1. Provide the file path to the LlamaCpp model
-python - <<EOF
-            self.llm = LlamaCpp(
-                model_path = filePath,
-                n_gpu_layers=0,
-                n_batch=64,
-                n_ctx=1024,
-                f16_kv=True,
-                callbacks=[StreamingStdOutCallbackHandler()],
-                verbose=False,
-            )
-EOF
-
-# 2. Generate answers with prompts
-python - <<EOF
-def generate_answer(self, query: str, context_chunks: List[str], prompt_template: str) -> str:
-        context = "\n".join(context_chunks)
-        prompt = prompt_template.format(context=context, query=query)
-        return self.llm.invoke(prompt)
-EOF
-
-# 3. Handle errors
-python - <<EOF
-def __init__(self, filePath):
-        try:
-            print(f"? Loading model from: {filePath}")
-            current_dir = os.path.dirname(__file__)
-        except Exception as e:
-            print(f"? Failed to load model: {e}")
-            raise
-EOF
-```
-
----
 
 ## Reflections and Thoughts
 
