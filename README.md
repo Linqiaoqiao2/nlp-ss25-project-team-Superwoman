@@ -54,10 +54,10 @@ baseline/
 </pre>
 ## Steps to setup and run from the `baseline` folder
  1. **Make sure your are currently inside the /baseline folder**
- 2. **LLMS can be download based on the your preference and placed in the llms folder:**  https://raw.githubusercontent.com/nomic-ai/gpt4all/main/gpt4all-chat/metadata/models2.json
+ 2. **Place the LLM file in the baseline/llms folder:**  https://raw.githubusercontent.com/nomic-ai/gpt4all/main/gpt4all-chat/metadata/models2.json
  3. **To install the required packages:** Run the below commands in the terminal to install the requiered package
                 ```bash
-                    conda env create -f environment.yml
+                    conda env create -f environment.yml;
                     conda activate rag-bot-test
                  ```
  
