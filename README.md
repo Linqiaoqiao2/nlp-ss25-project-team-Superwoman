@@ -140,7 +140,9 @@ The `Generator` class in `generator.py` utilizes a local LlamaCpp model for gene
 
 We tested our system using both English and German documents. Currently, it only supports querying English documents in English and German documents in German. In the future, we could build on this foundation to enable cross-lingual retrieval.
 
-We can validate input parameters for the Generator class to make sure the output from the model conforms to the expected results. For example, the text chunks should not be an empty list or the generated answers should be in the format of string.
+We can validate input parameters for the Generator class to make sure the output from the model conforms to the expected results. In terms of syntax, the text chunks should not be an empty list or the generated answers should be in the format of string. In terms of semantics, the standard of consine similarity score of query and retrieved chunks can be tested differently to find out the best score to return the most suitable chunks for the preparation of answer generation.
+
+How to handle dynamic data and realize the on-time update in our raw data automatically will be of great significance for the chatbot’s performance. With the help of it, our chatbot can always be supported by the lastest information from the webpages.
 
 
 ---
