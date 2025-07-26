@@ -101,6 +101,9 @@ To install:
 
 ```bash
 pip install sentence-transformers transformers faiss-cpu rank-bm25 PyMuPDF loguru
+```
+```
+
 
 ### ✅ Features
 
