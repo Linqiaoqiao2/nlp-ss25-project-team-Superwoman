@@ -104,7 +104,7 @@ pip install sentence-transformers transformers faiss-cpu rank-bm25 PyMuPDF logur
 ```
 
 
-### ✅ Features
+### Features
 
 - Dense + sparse retrieval with score fusion  
 - Optional cross-encoder reranker  
