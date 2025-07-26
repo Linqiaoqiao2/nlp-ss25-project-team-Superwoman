@@ -73,44 +73,28 @@ baseline/
  
  
 ---
+## Usage Instructions
 
 ## Retriever Module
 
-The `Retriever` class in `retriever.py` provides end-to-end semantic search over text and PDF documents:
+The `Retriever` class in `retriever.py` implements hybrid document retrieval for RAG systems, combining dense and sparse methods to improve coverage.
 
-1. **Load documents** (`.txt`, `.md`, `.pdf`)
-2. **Chunk text** into overlapping token windows
-3. **Embed chunks** with a SentenceTransformer
-4. **Index embeddings** in FAISS for fast similarity search
-5. **Query** the index to return top-K relevant chunks
-6. **Save** / **Load** the index and chunk metadata to/from disk
+1. **Load and index documents** (`.txt`, `.pdf`, `.json`) with overlapping chunking  
+2. **Support hybrid retrieval** using dense vectors (BGE-M3) and BM25 with weighted score fusion  
+3. **Optional reranking** with a cross-encoder for more accurate results  
+4. **Track sources** so each chunk can be traced back to its original file  
+5. **Save and load** FAISS and BM25 indexes for reuse
+   
 
-### Key Features
+### ✅ Features
 
-* **Multi-format support**: `.txt`, `.md`, `.pdf`
-* **Configurable chunking**: adjustable `chunk_size` and `chunk_overlap` parameters
-* **Custom embeddings**: plug in any SentenceTransformer model
-* **Fast similarity search**: powered by FAISS `IndexFlatL2`
+- Dense + sparse retrieval with score fusion  
+- Optional cross-encoder reranker  
+- Overlapping chunking based on tokenizer  
+- Supports `.txt`, `.md`, `.pdf`, `.json` files  
+- Source tracking for each chunk  
+- Easy saving and loading of FAISS/BM25 index
 
-### Implementation Details
-
-#### Document Loading
-
-* **`.txt` / `.md`**: UTF-8 text reading
-* **`.pdf`**: page-by-page text extraction via [PyMuPDF](https://pymupdf.readthedocs.io/)
-
-#### Chunking Strategy
-
-* **Tokenization**: using `AutoTokenizer` (WordPiece)
-* **Sliding window**: generate overlapping chunks to preserve context
-
-#### Embeddings
-
-* **Batch encoding**: use `SentenceTransformer.encode` to convert chunks into vector embeddings
-
-#### Indexing
-
-* **FAISS**: use `IndexFlatL2` for L2-distance based nearest neighbor search
 
 ---
 
@@ -133,7 +117,6 @@ The `Generator` class in `generator.py` utilizes a local LlamaCpp model for gene
 4. **List**: In the generate_answer method, List[str] specifies that the context_chunks parameter should be a list of strings.
 5. **StreamingStdOutCallbackHandler**: It handles streaming output from the LlamaCpp model, allowing the generated text to be printed to standard output in real-time as it is produced.
 
-## Usage Instructions
 
 
 ## Reflections and Thoughts
