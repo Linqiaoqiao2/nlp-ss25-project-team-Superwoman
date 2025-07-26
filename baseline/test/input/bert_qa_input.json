@@ -1,64 +1,63 @@
 [
     {
-        "qn":"What are the module groups of the master’s in Applied Computer Science at Bamberg?",
+        "qn":"I want to have a look at the master’s module courses. What are the module groups of the master’s in Applied Computer Science at Bamberg?",
         "ans":" Applied Computer Science, Computer Science, Application Electives & Information Systems, Projects, Seminars, as well as Master’s thesis."
     },
 
     {
-        "qn":"How many seminars and projects do I need to finish the master’s in Applied Computer Science at Bamberg?",
+        "qn":"I want to consult something about seminars and projects. How many seminars and projects do I need to finish the master’s in Applied Computer Science at Bamberg?",
         "ans":" At least two master’s seminars and up to two research-oriented projects."
     },
     {
-        "qn":"What are the main parts of the programme?",
+        "qn":"Master’s modules are something I think the most important. What are the main parts of the programme?",
         "ans": "The master’s degree programme comprises the six module groups outlined below. Particular importance is placed on guided individual studies represented by at least two master’s seminars, up to two research-oriented projects—each with 15 ECTS credit points—and a master’s thesis comprising 30 ECTS credit points."
     },
     {
-        "qn":"Who is the subject advisor for the Applied Computer Science Master’s programme at Bamberg?",
+        "qn":"I have some questions about the program’s subjects. Who is the subject advisor for the Applied Computer Science Master’s programme at Bamberg?",
         "ans": "Moritz Maleck"
     },
     {
-        "qn":"What is Moritz Maleck’s phone number?",
+        "qn":"I have some questions to ask the subject advisor. What is Moritz Maleck’s phone number?",
         "ans": "Tel.: +49 951 863-3942"
     },
     {
-        "qn":"Where is Moritz Maleck’s office room?",
+        "qn":"I want to ask Moritz Maleck some questions in person. Where is Moritz Maleck’s office room?",
         "ans": "Moritz Maleck WE5/01.034"
     },
     {
-        "qn":"Can the master’s programme in Applied Computer Science at Bamberg be studied part-time?",
+        "qn":"Can the master’s programme in Applied Computer Science at Bamberg be studied part-time? I want to work more if I can study part time",
         "ans": "All degree programmes offered by the faculty of Information Systems and Applied Computer Sciences (WIAI) can be studied as part-time courses."
     },
     {
-        "qn":"How long is the master’s programme extended when studied part-time?",
+        "qn":"How long is the master’s programme extended when studied part-time? I want to study part time as long as possible",
         "ans": "The duration of master’s degree programmes is extended from 3 or 4 semesters to 6 or 8 semesters, respectively."
     },
     {
-        "qn":"Who can do part-time studies at Bamberg ",
+        "qn":"Who can do part-time studies at Bamberg? Who is more suitable to apply for the part time study? ",
         "ans": "Who can benefit: Particularly for students with children, part-time employment or students with disabilities or chronic illness, part-time studies afford the opportunity to reduce these students’ academic work load during the semester and extend the allotted duration of a particular degree programme."
     },
     {
-        "qn":"What is required for admission to the master’s programme in Applied Computer Science at Bamberg?",
+        "qn":"What is required for admission to the master’s programme in Applied Computer Science at Bamberg? I want to see whether I am qualified for the admission requirement.",
         "ans": "Admission to the master’s degree programme in Applied Computer Science requires that a student have completed a university or equivalent degree in the same major, or a closely related one, with a grade average of the German 2,7 or better."
     },
     {
-        "qn":"What is the recommended application deadline for studies beginning in the winter semester?",
+        "qn":"What is the recommended application deadline for studies beginning in the winter semester? I want to apply for the coming winter semester",
         "ans": "Recommended application deadline: no later than 15th of September."
     },
     {
-        "qn":"What documents do I need to apply for the master programme?",
+        "qn":"What documents do I need to apply for the master programme? I want to prepare those application documents in time",
         "ans": " Your completed application must include the following documentation: Certification of successful completion of the examination for general or restricted university entry qualification; Certification of a completed university degree qualifying for entrance to the masters degree programme; Documentation of modules, courses and examinations completed within the scope of your qualifying university degree (e.g. a transcript of records); For foreign applicants: Certificates giving proof of your German language proficiency, at least of level B2, along with a copy of your identity card or passport; Where applicable: professional credentials/ references, certificates from professional and continuing educational programmes, awards/ honours or voluntary service."
     },
     {
-        "qn":"What can I do after this master’s programme?",
-        "ans": "The degree Master of Science in Applied Computer Science enables you to work in all phases of system and software development. In addition to software development, advice on the introduction of information systems is an important task. One of the strengths of our graduates is their particularly broad training in the methods of applied computer science."
+        "qn":"What are the good reasons to choose this degree? I want to know its advantages over other programs in other universities.",
+        "ans": " Master students work actively in small teams with the lecturers on current research topics in the chairs. Study abroad is facilitated by learning agreements and a large number of partner universities and personal contacts between the lecturers and supported by the faculty. Small seminars offer students a direct contact with lecturers. The Applied Computer Science master’s degree offers a very good supervisory relationship due to its size and staffing. Wide range of subjects through five chairs in the field of applied computer science and five chairs in the field of computer science are provided. Extensive electronic learning platform is offered, where the course materials for the individual courses are made available. This forum can be used to put questions to fellow students and lecturers and to hold discussions on individual topics. We have good contacts among the students and active student groups and associations, which makes everyday student life easier. Interdisciplinary approach through the application of computer science to areas of humanities, cultural and social sciences creates generalists with a vision. The World Heritage City of Bamberg offers something for every taste, both in terms of leisure activities and culture. Thanks to the interdisciplinary approach of this applied course, the graduates have very good job market opportunities. "
     },
     {
-        "qn":"Which fields can graduates work in after graduation?",
-        "ans": "Typical fields of activity are private companies and public institutions with their increasing tasks in document and content management, the media industry of traditional and electronic media, tourism and leisure, and the cultural area with museums and archives through to monument preservation."
-    },
+        "qn":"Which fields can graduates work in after graduation? I hope my major is required by diverse fields.",
+        "ans": "The degree Master of Science in Applied Computer Science enables you to work in all phases of system and software development. In addition to software development, advice on the introduction of information systems is an important task. One of the strengths of our graduates is their particularly broad training in the methods of applied computer science. Typical fields of activity are private companies and public institutions with their increasing tasks in document and content management, the media industry of traditional and electronic media, tourism and leisure, and the cultural area with museums and archives through to monument preservation."
+},
     {
-        "qn":"I changed the course of study. How can I get my previous achievements recognized?",
+        "qn":"I changed the course of study. How can I get my previous achievements recognized? I studied in the education program at the University of Bamberg beforehand.",
         "ans": "If the change between two courses takes place at the University of Bamberg, please send the grade sheet that you generate from FlexNow2 to the Examination Board for Computer Science and Applied Computer Science. You also send an application for recognition (to be found in the vc course of the examination board). If you have previously studied at another university, please make an appointment with the examination board. Further information can be found under Recognition of study periods, examination achievements and course achievements."
-    }
+}
 ]
-
