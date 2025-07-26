@@ -84,6 +84,8 @@ The `Retriever` class in `retriever.py` implements hybrid document retrieval for
 3. **Optional reranking** with a cross-encoder for more accurate results  
 4. **Track sources** so each chunk can be traced back to its original file  
 5. **Save and load** FAISS and BM25 indexes for reuse
+
+
 ### 🧩 Dependencies
 
 The `Retriever` module depends on the following Python packages:
