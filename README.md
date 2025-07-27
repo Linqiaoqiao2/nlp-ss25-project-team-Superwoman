@@ -55,7 +55,7 @@ baseline/
 ## Steps to run chatbot
  1. **Make sure your are currently inside the /baseline folder**
  2. **Place the LLM file in the baseline/llms folder:**  https://raw.githubusercontent.com/nomic-ai/gpt4all/main/gpt4all-chat/metadata/models2.json
- 3. **To install the required packages:** Run the below commands in the terminal to install the requiered package
+ 3. **To install the required packages:** Run the below commands in the terminal to install the requiered package.                       
                 ```
                     conda env create -f environment.yml;
                     conda activate rag-uni-bot
