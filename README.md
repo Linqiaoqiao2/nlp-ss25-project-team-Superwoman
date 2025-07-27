@@ -1,6 +1,6 @@
 # A RAG-based Chatbot for University Course Assistance - Summer Semester 2025
 
-> **🎓 University Course Chatbot – RAG-Based QA System** 
+> **🎓 University Course Assistance Chatbot** 
 
 ---
 
@@ -67,14 +67,14 @@ baseline/
 
 ## Steps to setup and run testcases
 
-# To get answers with BERT Score
+### To get answers with BERT Score
  1. **Make sure your are currently inside the /baseline folder**
  2. **To test with new question, add your question to:** test/input/bert_qa_input.json
  3. **To run the RAGPipeline with test data/questions:** python test/Bert_score_calculation.py
  5. **Output file:** test/output/bert_output.txt
  
 
- # To get answers with f1 Score, recall and precision 
+ ### To get answers with f1 Score, recall and precision 
  1. **Make sure your are currently inside the /baseline folder**
  2. **To test with new question, add your question to:** test/input/f1_qa_input.json
  3. **To run the RAGPipeline with test data/questions:** python test/F1_score_calculation.py
@@ -95,8 +95,7 @@ The `Retriever` class in `retriever/retriever.py` implements hybrid document ret
 4. **Track sources** so each chunk can be traced back to its original file  
 5. **Save and load** FAISS and BM25 indexes for reuse
 
-# Features
-
+### Features
 - Dense + sparse retrieval with score fusion  
 - Optional cross-encoder reranker  
 - Overlapping chunking based on tokenizer  
