@@ -35,13 +35,15 @@ baseline/
 │   └── retriever_bge_m3.py
 ├── runPipeline.py
 ├── test
+│   ├── Bert_score_calculation.py
 │   ├── F1_score_calculation.py
 │   ├── input
-│   │   ├── f1_qa_input.json
 |   |   ├── bert_qa_input.json
+│   │   ├── f1_qa_input.json
 │   │   └── questions.txt
 │   ├── outputs
 │   │   ├── answers.txt
+│   │   ├── bert_output.txt
 │   │   └── f1_output.txt
 │   ├── RAGPipelineTest_bge_m3.py
 │   └── test_retriever.py
