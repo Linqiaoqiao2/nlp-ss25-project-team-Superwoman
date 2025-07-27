@@ -45,8 +45,7 @@ baseline/
 │   │   ├── answers.txt
 │   │   ├── bert_output.txt
 │   │   └── f1_output.txt
-│   ├── RAGPipelineTest_bge_m3.py
-│   └── test_retriever.py
+│   └── RAGPipelineTest_bge_m3.py
 └── util
     ├── fileUtil.py
     └── logger_config.py
