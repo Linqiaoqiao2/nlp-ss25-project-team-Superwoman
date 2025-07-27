@@ -55,7 +55,7 @@ baseline/
 
 </pre>
 ## Steps to run chatbot
- 1. **Make sure your are currently inside the /baseline folder**
+ 1. **Make sure you are currently inside the /baseline folder**
  2. **Place the LLM file in the baseline/llms folder:**  https://raw.githubusercontent.com/nomic-ai/gpt4all/main/gpt4all-chat/metadata/models2.json
  3. **To install the required packages:** Run the below commands in the terminal to install the requiered package.                       
                 ```
@@ -70,14 +70,14 @@ baseline/
 ## Steps to setup and run testcases
 
 ### To get answers with BERT Score
- 1. **Make sure your are currently inside the /baseline folder**
+ 1. **Make sure you are currently inside the /baseline folder**
  2. **To test with new question, add your question to:** test/input/bert_qa_input.json
  3. **To run the RAGPipeline with test data/questions:** python test/Bert_score_calculation.py
  5. **Output file:** test/output/bert_output.txt
  
 
  ### To get answers with f1 Score, recall and precision 
- 1. **Make sure your are currently inside the /baseline folder**
+ 1. **Make sure you are currently inside the /baseline folder**
  2. **To test with new question, add your question to:** test/input/f1_qa_input.json
  3. **To run the RAGPipeline with test data/questions:** python test/F1_score_calculation.py
  5. **Output file:** test/output/f1_output.txt
@@ -85,13 +85,13 @@ baseline/
 ---
 ### 🧩 Architechture
 
-![Project Diagram](architechture_diagram.png)
+![Project Diagram](architecture_diagram.png)
 
 ## Retriever Module
 
 The `Retriever` class in `retriever/retriever.py` implements hybrid document retrieval for RAG systems, combining dense and sparse methods to improve coverage.
 
-1. **Load and index documents** (`.txt`, `.pdf`, `.json`) with overlapping chunking  
+1. **Load and index documents** (`.txt`, `.md`, `.pdf`, `.json`) with overlapping chunking  
 2. **Support hybrid retrieval** using dense vectors (BGE-M3) and BM25 with weighted score fusion  
 3. **Optional reranking** with a cross-encoder for more accurate results  
 4. **Track sources** so each chunk can be traced back to its original file  
