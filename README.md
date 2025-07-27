@@ -1,4 +1,4 @@
-# RAG Project - Summer Semester 2025
+# A RAG-based Chatbot for University Course Assistance - Summer Semester 2025
 
 > **🎓 University Course Chatbot – RAG-Based QA System** 
 
@@ -116,8 +116,8 @@ pip install sentence-transformers transformers faiss-cpu rank-bm25 PyMuPDF logur
 
 ---
 
-## Usage Instructions
 
+![Project Diagram](architechture_diagram.png)
 
 ## Generator Module
 
@@ -127,13 +127,6 @@ The `Generator` class in `generator.py` utilizes a local LlamaCpp model for gene
 2. **Generate answers** by combining a user query with relevant context chunks using a customizable prompt template
 3. **Handle errors** to manage issues during model loading
 
-## Dependencies
-
-1. **LlamaCpp**: The library used for loading and interacting with the LlamaCpp model.
-2. **os**: Standard library for file path operations.
-3. **sys**: The model used to manipulate the Python runtime environment, access command-line arguments, and handle standard input/output streams.
-4. **List**: In the generate_answer method, List[str] specifies that the context_chunks parameter should be a list of strings.
-5. **StreamingStdOutCallbackHandler**: It handles streaming output from the LlamaCpp model, allowing the generated text to be printed to standard output in real-time as it is produced.
 
 
 
