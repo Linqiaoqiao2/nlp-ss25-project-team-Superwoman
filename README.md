@@ -56,9 +56,9 @@ baseline/
  1. **Make sure your are currently inside the /baseline folder**
  2. **Place the LLM file in the baseline/llms folder:**  https://raw.githubusercontent.com/nomic-ai/gpt4all/main/gpt4all-chat/metadata/models2.json
  3. **To install the required packages:** Run the below commands in the terminal to install the requiered package
-                ```bash
+                ```
                     conda env create -f environment.yml;
-                    conda activate rag-bot-test
+                    conda activate rag-uni-bot
                  ```
  
  4. **To run the chatbot:** python runPipeline.py
@@ -66,18 +66,28 @@ baseline/
 
 
 ## Steps to setup and run testcases
+
+# To get answers with BERT Score
  1. **Make sure your are currently inside the /baseline folder**
- 2. **To test with new question, add your question to:** test/input/questions.txt
- 3. **To run the RAGPipeline with test data/questions:** python test/RAGPipelineTest_bge_m3.py
- 5. **Output file:** test/output/answers.txt
+ 2. **To test with new question, add your question to:** test/input/bert_qa_input.json
+ 3. **To run the RAGPipeline with test data/questions:** python test/Bert_score_calculation.py
+ 5. **Output file:** test/output/bert_output.txt
  
+
+ # To get answers with f1 Score, recall and precision 
+ 1. **Make sure your are currently inside the /baseline folder**
+ 2. **To test with new question, add your question to:** test/input/f1_qa_input.json
+ 3. **To run the RAGPipeline with test data/questions:** python test/F1_score_calculation.py
+ 5. **Output file:** test/output/f1_output.txt
  
 ---
-## Usage Instructions
+### 🧩 Architechture
+
+![Project Diagram](architechture_diagram.png)
 
 ## Retriever Module
 
-The `Retriever` class in `retriever.py` implements hybrid document retrieval for RAG systems, combining dense and sparse methods to improve coverage.
+The `Retriever` class in `retriever/retriever.py` implements hybrid document retrieval for RAG systems, combining dense and sparse methods to improve coverage.
 
 1. **Load and index documents** (`.txt`, `.pdf`, `.json`) with overlapping chunking  
 2. **Support hybrid retrieval** using dense vectors (BGE-M3) and BM25 with weighted score fusion  
@@ -85,26 +95,7 @@ The `Retriever` class in `retriever.py` implements hybrid document retrieval for
 4. **Track sources** so each chunk can be traced back to its original file  
 5. **Save and load** FAISS and BM25 indexes for reuse
 
-
-### 🧩 Dependencies
-
-The `Retriever` module depends on the following Python packages:
-
-- sentence-transformers
-- transformers
-- faiss-cpu
-- rank-bm25
-- PyMuPDF
-- loguru
-
-To install:
-
-```bash
-pip install sentence-transformers transformers faiss-cpu rank-bm25 PyMuPDF loguru
-```
-
-
-### Features
+# Features
 
 - Dense + sparse retrieval with score fusion  
 - Optional cross-encoder reranker  
@@ -113,31 +104,25 @@ pip install sentence-transformers transformers faiss-cpu rank-bm25 PyMuPDF logur
 - Source tracking for each chunk  
 - Easy saving and loading of FAISS/BM25 index
 
-
----
-
-
-![Project Diagram](architechture_diagram.png)
-
 ## Generator Module
 
-The `Generator` class in `generator.py` utilizes a local LlamaCpp model for generating answers based on retrieved context, which is useful for question-answering systems.
+The `Generator` class in `generator/generator.py` utilizes a local LlamaCpp model for generating answers based on retrieved context, which is useful for question-answering systems.
 
-1. **Load llm model**  from a given file path
+1. **Load llm model**  Loads the first .gguf file from /llms directory 
 2. **Generate answers** by combining a user query with relevant context chunks using a customizable prompt template
 3. **Handle errors** to manage issues during model loading
 
+## Others
 
+1. **Log File**  : `logs/RAGPipeline.py`
 
+---
 
 ## Reflections and Thoughts
 
-We tested our system using both English and German documents. Currently, it only supports querying English documents in English and German documents in German. In the future, we could build on this foundation to enable cross-lingual retrieval.
-
-We can validate input parameters for the Generator class to make sure the output from the model conforms to the expected results. In terms of syntax, the text chunks should not be an empty list or the generated answers should be in the format of string. In terms of semantics, the standard of consine similarity score of query and retrieved chunks can be tested differently to find out the best score to return the most suitable chunks for the preparation of answer generation.
-
-How to handle dynamic data and realize the on-time update in our raw data automatically will be of great significance for the chatbot’s performance. With the help of it, our chatbot can always be supported by the lastest information from the webpages.
-
+The RAG-oriented chatbot developed offers information to users based on the generative model, which takes in users’ queries, retrieved top-k chunks and the
+constructed prompt for answer generation. After the test, it is concluded that the chatbot mostly understands users’ queries in both German and English, locates the answers’ source correctly and outputs the expected information to the users in a
+stable way. However, it still needs improvement in retrieving information from links and understanding the follow-up questions.
 
 ---
 
